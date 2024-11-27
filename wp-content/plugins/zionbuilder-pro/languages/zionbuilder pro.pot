@@ -1,0 +1,3407 @@
+# Copyright (C) 2024 Zionbuilder PRO
+# This file is distributed under the same license as the Zionbuilder PRO package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zionbuilder PRO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: ZionBuilder <hello@zionbuilder.io>\n"
+"POT-Creation-Date: 2024-10-09 15:00+0000\n"
+"Report-Msgid-Bugs-To: https://feedback.zionbuilder.io\n"
+"X-Domain: zionbuilder-pro\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../includes/Editor.php:145
+msgid "Box Shadow"
+msgstr ""
+
+#: ../includes/Editor.php:146
+msgid "Set the desired box shadow."
+msgstr ""
+
+#: ../includes/Editor.php:157
+msgid "Add new transform property"
+msgstr ""
+
+#: ../includes/Editor.php:163
+msgid "Transform properties"
+msgstr ""
+
+#: ../includes/Editor.php:171
+msgid "Property"
+msgstr ""
+
+#: ../includes/Editor.php:176
+msgid "Translate"
+msgstr ""
+
+#: ../includes/Editor.php:180
+msgid "Scale"
+msgstr ""
+
+#: ../includes/Editor.php:184, ../includes/Editor.php:392
+msgid "Rotate"
+msgstr ""
+
+#: ../includes/Editor.php:188
+msgid "Skew"
+msgstr ""
+
+#: ../includes/Editor.php:192, ../includes/Editor.php:615
+msgid "Perspective"
+msgstr ""
+
+#: ../includes/Editor.php:216
+msgid "Translate X"
+msgstr ""
+
+#: ../includes/Editor.php:217
+msgid "Set translate property for X dimension."
+msgstr ""
+
+#: ../includes/Editor.php:257
+msgid "Translate Y"
+msgstr ""
+
+#: ../includes/Editor.php:258
+msgid "Set translate property for Y dimension."
+msgstr ""
+
+#: ../includes/Editor.php:298
+msgid "Translate Z"
+msgstr ""
+
+#: ../includes/Editor.php:299
+msgid "Set translate property for Z dimension."
+msgstr ""
+
+#: ../includes/Editor.php:340
+msgid "Scale X"
+msgstr ""
+
+#: ../includes/Editor.php:341
+msgid "Set scale property for X dimension."
+msgstr ""
+
+#: ../includes/Editor.php:354
+msgid "Scale Y"
+msgstr ""
+
+#: ../includes/Editor.php:356
+msgid "Set scale property for Y dimension."
+msgstr ""
+
+#: ../includes/Editor.php:369
+msgid "Scale Z"
+msgstr ""
+
+#: ../includes/Editor.php:370
+msgid "Set scale property for Z dimension."
+msgstr ""
+
+#: ../includes/Editor.php:393
+msgid "Set rotation property."
+msgstr ""
+
+#: ../includes/Editor.php:409
+msgid "Rotate X"
+msgstr ""
+
+#: ../includes/Editor.php:410
+msgid "Set rotation property for X dimension."
+msgstr ""
+
+#: ../includes/Editor.php:426
+msgid "Rotate Y"
+msgstr ""
+
+#: ../includes/Editor.php:427
+msgid "Set rotation property for Y dimension."
+msgstr ""
+
+#: ../includes/Editor.php:444
+msgid "Rotate Z"
+msgstr ""
+
+#: ../includes/Editor.php:445
+msgid "Set rotation property for Z dimension."
+msgstr ""
+
+#: ../includes/Editor.php:475
+msgid "Skew X"
+msgstr ""
+
+#: ../includes/Editor.php:476
+msgid "Set skew property for X dimension."
+msgstr ""
+
+#: ../includes/Editor.php:493
+msgid "Skew Y"
+msgstr ""
+
+#: ../includes/Editor.php:494
+msgid "Set skew property for Y dimension."
+msgstr ""
+
+#: ../includes/Editor.php:525
+msgid "Perspective value"
+msgstr ""
+
+#: ../includes/Editor.php:526, ../includes/Editor.php:561, ../includes/Editor.php:588, ../includes/Editor.php:616
+msgid "Set perspective property."
+msgstr ""
+
+#: ../includes/Editor.php:560
+msgid "Perspective origin x-axis"
+msgstr ""
+
+#: ../includes/Editor.php:587
+msgid "Perspective origin y-axis"
+msgstr ""
+
+#: ../includes/Editor.php:642
+msgid "Transform origin X axis"
+msgstr ""
+
+#: ../includes/Editor.php:643
+msgid "Set horizontal position of the transform origin"
+msgstr ""
+
+#: ../includes/Editor.php:670
+msgid "Transform origin Y axis"
+msgstr ""
+
+#: ../includes/Editor.php:671
+msgid "Set vertical position of the transform origin"
+msgstr ""
+
+#: ../includes/Editor.php:698
+msgid "Transform origin Z axis"
+msgstr ""
+
+#: ../includes/Editor.php:699
+msgid "Set the Z offset of the transform origin"
+msgstr ""
+
+#: ../includes/Editor.php:717
+msgid "Transform style"
+msgstr ""
+
+#: ../includes/Editor.php:718
+msgid "Specifies that child elements will preserve its 3D position"
+msgstr ""
+
+#: ../includes/Editor.php:723
+msgid "Flat"
+msgstr ""
+
+#: ../includes/Editor.php:727
+msgid "Preserve 3d"
+msgstr ""
+
+#: ../includes/Editor.php:731
+msgid "Initial"
+msgstr ""
+
+#: ../includes/Editor.php:735
+msgid "Inherit"
+msgstr ""
+
+#: ../includes/Editor.php:760
+msgid "X axis"
+msgstr ""
+
+#: ../includes/Editor.php:761
+msgid "Set X axis origin property."
+msgstr ""
+
+#: ../includes/Editor.php:792
+msgid "Y axis"
+msgstr ""
+
+#: ../includes/Editor.php:793
+msgid "Set Y axis origin property."
+msgstr ""
+
+#: ../includes/Editor.php:824
+msgid "Z axis"
+msgstr ""
+
+#: ../includes/Editor.php:825
+msgid "Set Z axis origin property."
+msgstr ""
+
+#: ../includes/Editor.php:844
+msgid "Display options"
+msgstr ""
+
+#: ../includes/Editor.php:852, ../includes/MegaMenu.php:132
+msgid "Display"
+msgstr ""
+
+#: ../includes/Editor.php:853
+msgid "Display css properties"
+msgstr ""
+
+#: ../includes/Editor.php:858
+msgid "flex"
+msgstr ""
+
+#: ../includes/Editor.php:862
+msgid "block"
+msgstr ""
+
+#: ../includes/Editor.php:866
+msgid "inline"
+msgstr ""
+
+#: ../includes/Editor.php:870
+msgid "inline-flex"
+msgstr ""
+
+#: ../includes/Editor.php:874
+msgid "inline-block"
+msgstr ""
+
+#: ../includes/Editor.php:878, ../includes/Editor.php:1408, ../includes/Editor.php:1453, ../includes/Repeater/Providers/QueryBuilder.php:111
+msgid "none"
+msgstr ""
+
+#: ../includes/Editor.php:889
+msgid "Visibility"
+msgstr ""
+
+#: ../includes/Editor.php:890
+msgid "Set visibility option for element"
+msgstr ""
+
+#: ../includes/Editor.php:909
+msgid "Overflow"
+msgstr ""
+
+#: ../includes/Editor.php:910
+msgid "Set overflow for element."
+msgstr ""
+
+#: ../includes/Editor.php:933
+msgid "Backface Visibility"
+msgstr ""
+
+#: ../includes/Editor.php:934
+msgid "The backface-visibility property defines whether or not the back face of an element should be visible when facing the user. "
+msgstr ""
+
+#: ../includes/Editor.php:960
+msgid "Aspect ration"
+msgstr ""
+
+#: ../includes/Editor.php:961
+msgid "The aspect-ratio CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions."
+msgstr ""
+
+#: ../includes/Editor.php:969
+msgid "Flexbox container options"
+msgstr ""
+
+#: ../includes/Editor.php:984
+msgid "Gap"
+msgstr ""
+
+#: ../includes/Editor.php:985
+msgid "The gap option allows you to specify the gap between child elements on the main axis. Current browser support is 89.92%. In order to increase browser support, you can use margins."
+msgstr ""
+
+#: ../includes/Editor.php:995
+msgid "Column Gap"
+msgstr ""
+
+#: ../includes/Editor.php:996
+msgid "The column-gap CSS property sets the size of the gap (gutter) between an element's columns"
+msgstr ""
+
+#: ../includes/Editor.php:1007
+msgid "Row Gap"
+msgstr ""
+
+#: ../includes/Editor.php:1008
+msgid "The row-gap CSS property sets the size of the gap (gutter) between an element's rows"
+msgstr ""
+
+#: ../includes/Editor.php:1022
+msgid "vertical"
+msgstr ""
+
+#: ../includes/Editor.php:1026
+msgid "horizontal"
+msgstr ""
+
+#: ../includes/Editor.php:1030
+msgid "Flex direction"
+msgstr ""
+
+#: ../includes/Editor.php:1041
+msgid "flex-reverse"
+msgstr ""
+
+#: ../includes/Editor.php:1046
+msgid "Flex reverse"
+msgstr ""
+
+#: ../includes/Editor.php:1054
+msgid "Align items"
+msgstr ""
+
+#: ../includes/Editor.php:1055
+msgid "Set align items"
+msgstr ""
+
+#: ../includes/Editor.php:1058, ../includes/Editor.php:1095, ../includes/Editor.php:1157, ../includes/Editor.php:1235
+msgid "flex-start"
+msgstr ""
+
+#: ../includes/Editor.php:1063, ../includes/Editor.php:1100, ../includes/Editor.php:1162, ../includes/Editor.php:1240
+msgid "center"
+msgstr ""
+
+#: ../includes/Editor.php:1068, ../includes/Editor.php:1105, ../includes/Editor.php:1167, ../includes/Editor.php:1245
+msgid "flex-end"
+msgstr ""
+
+#: ../includes/Editor.php:1073, ../includes/Editor.php:1250
+msgid "stretch"
+msgstr ""
+
+#: ../includes/Editor.php:1078, ../includes/Editor.php:1255
+msgid "baseline"
+msgstr ""
+
+#: ../includes/Editor.php:1090
+msgid "Justify"
+msgstr ""
+
+#: ../includes/Editor.php:1091, ../includes/Editor.php:1441
+msgid "Set float option for element"
+msgstr ""
+
+#: ../includes/Editor.php:1110, ../includes/Editor.php:1172
+msgid "space-between"
+msgstr ""
+
+#: ../includes/Editor.php:1115, ../includes/Editor.php:1177
+msgid "space-around"
+msgstr ""
+
+#: ../includes/Editor.php:1128
+msgid "Wrap"
+msgstr ""
+
+#: ../includes/Editor.php:1129
+msgid "Set wrap for element"
+msgstr ""
+
+#: ../includes/Editor.php:1132
+msgid "wrap"
+msgstr ""
+
+#: ../includes/Editor.php:1136
+msgid "nowrap"
+msgstr ""
+
+#: ../includes/Editor.php:1140
+msgid "wrap-reverse"
+msgstr ""
+
+#: ../includes/Editor.php:1152
+msgid "Align content"
+msgstr ""
+
+#: ../includes/Editor.php:1153
+msgid "Set align content"
+msgstr ""
+
+#: ../includes/Editor.php:1182
+msgid "strech"
+msgstr ""
+
+#: ../includes/Editor.php:1194
+msgid "Flexbox child options"
+msgstr ""
+
+#: ../includes/Editor.php:1204
+msgid "Flex Grow"
+msgstr ""
+
+#: ../includes/Editor.php:1213
+msgid "Flex Shrink"
+msgstr ""
+
+#: ../includes/Editor.php:1222
+msgid "Flex Basis"
+msgstr ""
+
+#: ../includes/Editor.php:1231
+msgid "Align self"
+msgstr ""
+
+#: ../includes/Editor.php:1232
+msgid "Set align self"
+msgstr ""
+
+#: ../includes/Editor.php:1267, ../includes/DynamicContent/Fields/PostTerms.php:166, ../includes/Repeater/Providers/QueryBuilder.php:161, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:141, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:140, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:141
+msgid "Order"
+msgstr ""
+
+#: ../includes/Editor.php:1271
+msgid "first"
+msgstr ""
+
+#: ../includes/Editor.php:1275
+msgid "last"
+msgstr ""
+
+#: ../includes/Editor.php:1286
+msgid "Custom Order"
+msgstr ""
+
+#: ../includes/Editor.php:1295
+msgid "Position options"
+msgstr ""
+
+#: ../includes/Editor.php:1304
+msgid "Position"
+msgstr ""
+
+#: ../includes/Editor.php:1305
+msgid "Set element position"
+msgstr ""
+
+#: ../includes/Editor.php:1309
+msgid "static"
+msgstr ""
+
+#: ../includes/Editor.php:1313
+msgid "relative"
+msgstr ""
+
+#: ../includes/Editor.php:1317
+msgid "absolute"
+msgstr ""
+
+#: ../includes/Editor.php:1321
+msgid "fixed"
+msgstr ""
+
+#: ../includes/Editor.php:1325
+msgid "sticky"
+msgstr ""
+
+#: ../includes/Editor.php:1336
+msgid "Top"
+msgstr ""
+
+#: ../includes/Editor.php:1347
+msgid "Bottom"
+msgstr ""
+
+#: ../includes/Editor.php:1358
+msgid "Left"
+msgstr ""
+
+#: ../includes/Editor.php:1369
+msgid "Right"
+msgstr ""
+
+#: ../includes/Editor.php:1380, ../includes/Editor.php:1390
+msgid "Object fit"
+msgstr ""
+
+#: ../includes/Editor.php:1391, ../includes/Editor.php:1423
+msgid "Object fit is used to specify how an <img> or <video> should be resized to fit its container."
+msgstr ""
+
+#: ../includes/Editor.php:1396
+msgid "fill"
+msgstr ""
+
+#: ../includes/Editor.php:1400
+msgid "contain"
+msgstr ""
+
+#: ../includes/Editor.php:1404
+msgid "cover"
+msgstr ""
+
+#: ../includes/Editor.php:1412
+msgid "scale-down"
+msgstr ""
+
+#: ../includes/Editor.php:1422
+msgid "Object fit position"
+msgstr ""
+
+#: ../includes/Editor.php:1431
+msgid "Floating options"
+msgstr ""
+
+#: ../includes/Editor.php:1440
+msgid "Float"
+msgstr ""
+
+#: ../includes/Editor.php:1445, ../includes/MegaMenu.php:207
+msgid "left"
+msgstr ""
+
+#: ../includes/Editor.php:1449, ../includes/MegaMenu.php:211
+msgid "right"
+msgstr ""
+
+#: ../includes/Editor.php:1464
+msgid "Clear"
+msgstr ""
+
+#: ../includes/Editor.php:1465
+msgid "Set clear option for element"
+msgstr ""
+
+#: ../includes/Editor.php:1492
+msgid "Filter options"
+msgstr ""
+
+#: ../includes/Editor.php:1502
+msgid "Mix Blend Mode"
+msgstr ""
+
+#: ../includes/Editor.php:1503
+msgid "Set the desired mix blend mode."
+msgstr ""
+
+#: ../includes/Editor.php:1508
+msgid "normal"
+msgstr ""
+
+#: ../includes/Editor.php:1512
+msgid "multiply"
+msgstr ""
+
+#: ../includes/Editor.php:1516
+msgid "screen"
+msgstr ""
+
+#: ../includes/Editor.php:1520
+msgid "overlay"
+msgstr ""
+
+#: ../includes/Editor.php:1524
+msgid "darken"
+msgstr ""
+
+#: ../includes/Editor.php:1528
+msgid "lighten"
+msgstr ""
+
+#: ../includes/Editor.php:1532
+msgid "color-dodge"
+msgstr ""
+
+#: ../includes/Editor.php:1536
+msgid "color-burn"
+msgstr ""
+
+#: ../includes/Editor.php:1540
+msgid "hard-light"
+msgstr ""
+
+#: ../includes/Editor.php:1544
+msgid "soft-light"
+msgstr ""
+
+#: ../includes/Editor.php:1548
+msgid "difference"
+msgstr ""
+
+#: ../includes/Editor.php:1552
+msgid "exclusion"
+msgstr ""
+
+#: ../includes/Editor.php:1556
+msgid "hue"
+msgstr ""
+
+#: ../includes/Editor.php:1560
+msgid "saturation"
+msgstr ""
+
+#: ../includes/Editor.php:1564
+msgid "color"
+msgstr ""
+
+#: ../includes/Editor.php:1568
+msgid "luminosity"
+msgstr ""
+
+#: ../includes/Editor.php:1572
+msgid "initial"
+msgstr ""
+
+#: ../includes/Editor.php:1576
+msgid "inherit"
+msgstr ""
+
+#: ../includes/Editor.php:1580
+msgid "unset"
+msgstr ""
+
+#: ../includes/Editor.php:1590
+msgid "Grayscale"
+msgstr ""
+
+#: ../includes/Editor.php:1591
+msgid "Set the desired grayscale css filter."
+msgstr ""
+
+#: ../includes/Editor.php:1603
+msgid "Sepia"
+msgstr ""
+
+#: ../includes/Editor.php:1604
+msgid "Set the desired sepia css filter."
+msgstr ""
+
+#: ../includes/Editor.php:1616
+msgid "Blur"
+msgstr ""
+
+#: ../includes/Editor.php:1617
+msgid "Set the desired blur css filter."
+msgstr ""
+
+#: ../includes/Editor.php:1629
+msgid "Brightness"
+msgstr ""
+
+#: ../includes/Editor.php:1630
+msgid "Set the desired brightness css filter."
+msgstr ""
+
+#: ../includes/Editor.php:1642
+msgid "Hue Rotate"
+msgstr ""
+
+#: ../includes/Editor.php:1643
+msgid "Set the desired hue rotate css filter."
+msgstr ""
+
+#: ../includes/Editor.php:1655
+msgid "Saturate"
+msgstr ""
+
+#: ../includes/Editor.php:1656
+msgid "Set the desired saturate css filter."
+msgstr ""
+
+#: ../includes/Editor.php:1668
+msgid "Opacity"
+msgstr ""
+
+#: ../includes/Editor.php:1669
+msgid "Set the desired opacity for the element."
+msgstr ""
+
+#: ../includes/Editor.php:1681
+msgid "Contrast"
+msgstr ""
+
+#: ../includes/Editor.php:1682
+msgid "Set the desired contrast for the element."
+msgstr ""
+
+#: ../includes/Editor.php:1694
+msgid "Invert"
+msgstr ""
+
+#: ../includes/Editor.php:1695
+msgid "Set the desired invert filter for the element."
+msgstr ""
+
+#: ../includes/Editor.php:1711
+msgid "Transition property"
+msgstr ""
+
+#: ../includes/Editor.php:1712
+msgid "Add desired transition properties separated by comma"
+msgstr ""
+
+#: ../includes/Editor.php:1713
+msgid "all"
+msgstr ""
+
+#: ../includes/Editor.php:1722
+msgid "Transition Duration"
+msgstr ""
+
+#: ../includes/Editor.php:1723
+msgid "Set the desired transition duration."
+msgstr ""
+
+#: ../includes/Editor.php:1737
+msgid "Transition Delay"
+msgstr ""
+
+#: ../includes/Editor.php:1738
+msgid "Set the desired transition delay."
+msgstr ""
+
+#: ../includes/Editor.php:1753
+msgid "Timing function"
+msgstr ""
+
+#: ../includes/Editor.php:1754
+msgid "Set the desired timing function for the transition. Start typing to add a Custom transition"
+msgstr ""
+
+#: ../includes/Editor.php:1757
+msgid "linear"
+msgstr ""
+
+#: ../includes/Editor.php:1761
+msgid "ease"
+msgstr ""
+
+#: ../includes/Editor.php:1765
+msgid "ease-in"
+msgstr ""
+
+#: ../includes/Editor.php:1769
+msgid "ease-out"
+msgstr ""
+
+#: ../includes/Editor.php:1773
+msgid "ease-in-out"
+msgstr ""
+
+#: ../includes/Elements.php:26
+msgid "Pro Elements"
+msgstr ""
+
+#: ../includes/Icons.php:78
+msgid "The uploaded font already exists. Please delete it before re-uploading"
+msgstr ""
+
+#: ../includes/Icons.php:119
+msgid "The zip did not contained any svg files."
+msgstr ""
+
+#: ../includes/Icons.php:124
+msgid "Could not find the svg file."
+msgstr ""
+
+#: ../includes/Icons.php:131
+msgid "The svg file could not be opened."
+msgstr ""
+
+#: ../includes/Icons.php:138, ../includes/Icons.php:149
+msgid "Could not find or read the svg file."
+msgstr ""
+
+#: ../includes/Icons.php:144
+msgid "Could not extract icons package name from archive."
+msgstr ""
+
+#: ../includes/Icons.php:181
+msgid "Could not extract icons from uploaded package."
+msgstr ""
+
+#: ../includes/Icons.php:209
+msgid "Could not delete the icon package."
+msgstr ""
+
+#: ../includes/Icons.php:238
+msgid "ZipArchive not installed. Contact your hosting provider and ask them to enable Zip Archive PHP extension."
+msgstr ""
+
+#: ../includes/License.php:86, ../includes/License.php:132
+msgid "Invalid license."
+msgstr ""
+
+#. translators: %s is the date when license has expired
+#: ../includes/License.php:121
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: ../includes/License.php:128
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: ../includes/License.php:137
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#. translators: %s is the plugin white label name
+#: ../includes/License.php:142
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: ../includes/License.php:146
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: ../includes/License.php:150, ../includes/License.php:111, ../includes/License.php:214
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: ../includes/License.php:229
+msgid "License disconnected."
+msgstr ""
+
+#: ../includes/MegaMenu.php:105
+msgid "Content"
+msgstr ""
+
+#: ../includes/MegaMenu.php:119, ../includes/Conditions/Conditions.php:65
+msgid "General"
+msgstr ""
+
+#: ../includes/MegaMenu.php:151
+msgid "Container width"
+msgstr ""
+
+#: ../includes/MegaMenu.php:162
+msgid "Submenu custom width"
+msgstr ""
+
+#: ../includes/MegaMenu.php:174
+msgid "Submenu position"
+msgstr ""
+
+#: ../includes/MegaMenu.php:190, ../includes/MegaMenu.php:194
+msgid "Icon"
+msgstr ""
+
+#: ../includes/MegaMenu.php:198
+msgid "Icon color"
+msgstr ""
+
+#: ../includes/MegaMenu.php:203
+msgid "Icon position"
+msgstr ""
+
+#: ../includes/MegaMenu.php:215
+msgid "top"
+msgstr ""
+
+#: ../includes/MegaMenu.php:219
+msgid "bottom"
+msgstr ""
+
+#: ../includes/MegaMenu.php:227
+msgid "Badge"
+msgstr ""
+
+#: ../includes/MegaMenu.php:231
+msgid "Badge text"
+msgstr ""
+
+#: ../includes/MegaMenu.php:235
+msgid "Badge color"
+msgstr ""
+
+#: ../includes/MegaMenu.php:240
+msgid "Badge text color"
+msgstr ""
+
+#: ../includes/Repeater.php:207
+msgid "Repeater Options"
+msgstr ""
+
+#: ../includes/Repeater.php:218
+msgid "Enable repeater provider?"
+msgstr ""
+
+#: ../includes/Repeater.php:242
+msgid "Enable repeater consumer?"
+msgstr ""
+
+#: ../includes/Repeater.php:263
+msgid "Start"
+msgstr ""
+
+#: ../includes/Repeater.php:271
+msgid "End"
+msgstr ""
+
+#. translators: %s is the minimum required version of Zion Builder
+#: ../includes/Requirements.php:50
+msgid "Zion builder Pro was not activated because you are using an outdated version of Zion Builder. Please update Zion Builder plugin to at least %s"
+msgstr ""
+
+#. translators: %s is the update url
+#: ../includes/Requirements.php:52
+msgid "Update Zion Builder"
+msgstr ""
+
+#: ../includes/Requirements.php:98
+msgid "Please contact an administrator to install the ZionBuilder plugin"
+msgstr ""
+
+#: ../includes/Requirements.php:96
+msgid "Install Zion Builder"
+msgstr ""
+
+#: ../includes/Requirements.php:101
+msgid "Zion builder Pro was not activated because it requires the Zion builder plugin."
+msgstr ""
+
+#: ../includes/Requirements.php:82
+msgid "Zion builder Pro is not working because it requires the Zion builder plugin to be installed and active."
+msgstr ""
+
+#: ../includes/Requirements.php:85
+msgid "Activate Zion Builder"
+msgstr ""
+
+#. translators: %s is the minimum zion builder pro version
+#: ../includes/Requirements.php:126
+msgid "Zion Builder plugin requires a higher version of Zion Builder PRO. Please update the plugin to at least version %s."
+msgstr ""
+
+#. translators: %s is the update url for zion builder
+#: ../includes/Requirements.php:128
+msgid "Update Zion Builder PRO"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:46, ../includes/DynamicContent/Fields/FeaturedImage.php:128, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:110, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:109, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:110
+msgid "Title"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:52
+msgid "Plugin Slug"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:54
+msgid "The plugin slug is used in plugin related URLs. This needs to be alphanumeric separated by dashes or underscores"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:60
+msgid "Logo"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:66
+msgid "Help Url"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:72
+msgid "Loader image"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:78
+msgid "Getting started video iframe URL"
+msgstr ""
+
+#: ../includes/WhiteLabel.php:79
+msgid "Enter your iframe video URL that will appear in the getting started popup. The popup will be disabled if you do not set a video."
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:73
+msgid "Visitor related"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:98
+msgid "Entire Site"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:107
+msgid "Homepage"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:116
+msgid "All search pages"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:125
+msgid "404 page"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:133
+msgid "All single pages"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:141
+msgid "All archive pages"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:150
+msgid "All author archive pages"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:159
+msgid "Specific author archive page"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:166
+msgid "Search users"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:167
+msgid "No user found"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:168
+msgid "No more user to load"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:175
+msgid "All logged in users"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:184
+msgid "All logged out users"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:219
+msgid "All"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:230
+msgid "archive page"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:239
+msgid "date archive page"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:250, ../includes/Conditions/Conditions.php:315
+msgid "Specific"
+msgstr ""
+
+#. translators: %s is the post type name
+#: ../includes/Conditions/Conditions.php:258, ../includes/Conditions/Conditions.php:295, ../includes/Conditions/Conditions.php:322
+msgid "Search %s"
+msgstr ""
+
+#. translators: %s is the post type name
+#: ../includes/Conditions/Conditions.php:260, ../includes/Conditions/Conditions.php:296, ../includes/Conditions/Conditions.php:323
+msgid "No %s found"
+msgstr ""
+
+#. translators: %s is the post type name
+#: ../includes/Conditions/Conditions.php:262, ../includes/Conditions/Conditions.php:297, ../includes/Conditions/Conditions.php:324
+msgid "No more %s to load"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:285
+msgid "in specific"
+msgstr ""
+
+#: ../includes/Conditions/Conditions.php:305, ../includes/DynamicContent/Manager.php:221, ../includes/ElementConditions/Conditions/Archive.php:19, ../includes/ElementConditions/Conditions/Archive.php:26
+msgid "Archive"
+msgstr ""
+
+#: ../includes/Conditions/RestController.php:43, ../includes/ElementConditions/Rest.php:177, ../includes/ThemeBuilder/RestController.php:51, ../includes/Api/RestControllers/AdobeFonts.php:58, ../includes/Api/RestControllers/Icons.php:90, ../includes/Api/RestControllers/MegaMenu.php:81, ../includes/Api/RestControllers/WPPageSelector.php:52, ../includes/Api/RestControllers/WPTerms.php:52, ../includes/Api/RestControllers/ZionApi.php:51
+msgid "You do not have permissions to view this resource."
+msgstr ""
+
+#: ../includes/DynamicContent/Manager.php:214, ../includes/ElementConditions/Conditions/Post.php:19, ../includes/ElementConditions/Conditions/Post.php:29
+msgid "Post"
+msgstr ""
+
+#: ../includes/DynamicContent/Manager.php:228
+msgid "Site"
+msgstr ""
+
+#: ../includes/DynamicContent/Manager.php:235, ../includes/ElementConditions/Conditions/Author.php:17
+msgid "Author"
+msgstr ""
+
+#: ../includes/DynamicContent/Manager.php:242, ../includes/ElementConditions/Conditions/User.php:19
+msgid "User"
+msgstr ""
+
+#: ../includes/DynamicContent/Manager.php:249
+msgid "Others"
+msgstr ""
+
+#. translators: %s: The field group id
+#: ../includes/DynamicContent/Manager.php:279
+msgid "The %s field requested was not found."
+msgstr ""
+
+#: ../includes/DynamicContent/Manager.php:502
+msgid "Dynamic data preview source"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:20, ../includes/Repeater/Providers/QueryBuilder.php:90
+msgid "yes"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:21, ../includes/Repeater/Providers/QueryBuilder.php:94
+msgid "no"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:22, ../includes/ElementConditions/Conditions/User.php:185, ../includes/ElementConditions/Conditions/User.php:214
+msgid "equals"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:23
+msgid "does not equal"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:24
+msgid "starts with"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:25
+msgid "ends with"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:26
+msgid "contains"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:27
+msgid "does not contain"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:28
+msgid "is set"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:29
+msgid "is not set"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:30
+msgid "is greater than"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:31
+msgid "is lower than"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:32
+msgid "is greater or equal to"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:33
+msgid "is lower or equal to"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:34
+msgid "is"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:35
+msgid "is not"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:36
+msgid "is empty"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:37
+msgid "is not empty"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:38
+msgid "include"
+msgstr ""
+
+#: ../includes/ElementConditions/ConditionsBase.php:39
+msgid "does not include"
+msgstr ""
+
+#: ../includes/ElementConditions/ElementConditions.php:61
+msgid "Advanced conditions"
+msgstr ""
+
+#: ../includes/ElementConditions/ElementConditions.php:69
+msgid "Set advanced conditions for displaying this element."
+msgstr ""
+
+#: ../includes/ElementConditions/ElementConditions.php:70
+msgid "Element Conditions"
+msgstr ""
+
+#. translators: %s post type singular name
+#: ../includes/ElementConditions/Rest.php:342
+msgctxt "%s post type singular name"
+msgid "%s Archive"
+msgstr ""
+
+#: ../includes/Features/AdditionalPageOptions.php:86
+msgid "Add extra css that will be applied to this page."
+msgstr ""
+
+#: ../includes/Features/AdditionalPageOptions.php:87, ../includes/Features/CustomCSS.php:46
+msgid "Custom CSS"
+msgstr ""
+
+#: ../includes/Features/AdditionalPageOptions.php:102
+msgid "Add extra javascript that will be applied to this page."
+msgstr ""
+
+#: ../includes/Features/AdditionalPageOptions.php:103
+msgid "Custom javascript"
+msgstr ""
+
+#: ../includes/Features/CustomCSS.php:22
+msgid "Custom css"
+msgstr ""
+
+#: ../includes/Features/CustomCSS.php:45
+msgid "Add extra css that will be applied to this element. \"[ELEMENT]\" can be used to select the current item"
+msgstr ""
+
+#: ../includes/Features/CustomCSS.php:48
+msgid "[ELEMENT] { Your code here }"
+msgstr ""
+
+#: ../includes/ThemeBuilder/ThemeBuilder.php:101
+msgid "Headers"
+msgstr ""
+
+#: ../includes/ThemeBuilder/ThemeBuilder.php:102, ../includes/ThemeBuilder/ThemeBuilder.php:500
+msgid "Header"
+msgstr ""
+
+#: ../includes/ThemeBuilder/ThemeBuilder.php:109, ../includes/ThemeBuilder/ThemeBuilder.php:110, ../includes/ThemeBuilder/ThemeBuilder.php:501
+msgid "Body"
+msgstr ""
+
+#: ../includes/ThemeBuilder/ThemeBuilder.php:117
+msgid "Footers"
+msgstr ""
+
+#: ../includes/ThemeBuilder/ThemeBuilder.php:118, ../includes/ThemeBuilder/ThemeBuilder.php:502
+msgid "Footer"
+msgstr ""
+
+#: ../includes/ThemeBuilder/ThemeBuilder.php:201, ../includes/ThemeBuilder/ThemeBuilder.php:202, ../includes/ThemeBuilder/ThemeBuilder.php:548
+msgid "Theme builder"
+msgstr ""
+
+#: ../includes/Api/RestControllers/Icons.php:117
+msgid "Your file is empty or invalid"
+msgstr ""
+
+#: ../includes/Api/RestControllers/Icons.php:125
+msgid "Your file is not a zip file."
+msgstr ""
+
+#: ../includes/Api/RestControllers/Icons.php:146
+msgid "Please specify the icons package name you want to delete."
+msgstr ""
+
+#: ../includes/Api/RestControllers/Icons.php:168
+msgid "Please specify the icons package name you want to export."
+msgstr ""
+
+#: ../includes/Api/RestControllers/MegaMenu.php:110
+msgid "Mega menu template for"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:31
+msgid "Author info"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:59, ../includes/DynamicContent/Fields/CurrentUserInfo.php:52, ../includes/DynamicContent/Fields/FeaturedImage.php:146
+msgid "Info to display"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:60, ../includes/DynamicContent/Fields/CurrentUserInfo.php:53
+msgid "Select the desired info you want to display."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:65, ../includes/DynamicContent/Fields/CurrentUserInfo.php:58
+msgid "Display name"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:69, ../includes/DynamicContent/Fields/CurrentUserInfo.php:62
+msgid "First name"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:73, ../includes/DynamicContent/Fields/CurrentUserInfo.php:66
+msgid "Last name"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:77, ../includes/DynamicContent/Fields/CurrentUserInfo.php:70, ../includes/DynamicContent/Fields/FeaturedImage.php:140, ../includes/DynamicContent/Fields/PostTerms.php:156
+msgid "Description"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:81, ../includes/DynamicContent/Fields/CurrentUserInfo.php:74, ../includes/DynamicContent/Fields/PostTerms.php:152, ../includes/Repeater/Providers/QueryBuilder.php:115, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:114, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:113, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:114
+msgid "ID"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:85, ../includes/DynamicContent/Fields/CurrentUserInfo.php:78
+msgid "Nickname"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:89, ../includes/DynamicContent/Fields/CurrentUserInfo.php:82
+msgid "Email"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorInfo.php:93, ../includes/DynamicContent/Fields/CurrentUserInfo.php:86
+msgid "Website"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorMeta.php:31
+msgid "Author meta"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorMeta.php:74, ../includes/DynamicContent/Fields/CurrentUserMeta.php:62
+msgid "Meta field"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/AuthorMeta.php:75, ../includes/DynamicContent/Fields/CurrentUserMeta.php:63
+msgid "Select the desired meta field for which you want to display the value."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:40
+msgid "Comments number"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:50, ../includes/DynamicContent/Fields/CommentsNumber.php:76, ../includes/DynamicContent/Fields/CommentsNumber.php:103
+msgid "No comments"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:51, ../includes/DynamicContent/Fields/CommentsNumber.php:77, ../includes/DynamicContent/Fields/CommentsNumber.php:109
+msgid "1 comment"
+msgstr ""
+
+#. translators: %s is the number of comments
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:53, ../includes/DynamicContent/Fields/CommentsNumber.php:78, ../includes/DynamicContent/Fields/CommentsNumber.php:117
+msgid "%s comments"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:101
+msgid "No comments text"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:102
+msgid "Set the desired text that will be displayed when there are no comments set to this post."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:107
+msgid "One comment text"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:108
+msgid "Set the desired text that will be displayed when there is only 1 comment."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:113
+msgid "Multiple comments text"
+msgstr ""
+
+#. translators: %s is the number of comments
+#: ../includes/DynamicContent/Fields/CommentsNumber.php:115
+msgid "Set the desired text that will be displayed when there are multiple comments. Use %s to where you want to display the comments number."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CurrentUserInfo.php:31
+msgid "Current user info"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/CurrentUserMeta.php:31
+msgid "Current user meta"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FeaturedImage.php:40, ../includes/DynamicContent/Fields/MediaFeaturedImage.php:31
+msgid "Featured image"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FeaturedImage.php:120
+msgid "File URL"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FeaturedImage.php:124
+msgid "Attachment page URL"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FeaturedImage.php:132
+msgid "Alternative title"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FeaturedImage.php:136
+msgid "Caption"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FeaturedImage.php:147
+msgid "Select the desired info you want to display"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FunctionReturnValue.php:35, ../includes/ElementConditions/Conditions/AdvancedConditionals.php:250
+msgid "Function return value"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FunctionReturnValue.php:61
+msgid "Function"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FunctionReturnValue.php:62
+msgid "The output of this function will be displayed. Please note that the function must be publicly available."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FunctionReturnValue.php:63
+msgid "Enter function"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FunctionReturnValue.php:67
+msgid "Function arguments"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/FunctionReturnValue.php:68
+msgid "Enter the function arguments separated by comma."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/GlobalColor.php:34
+msgid "Global Color"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/GlobalGradient.php:34
+msgid "Global Gradient"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkAuthorPage.php:31
+msgid "Author Page Link"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkHomePage.php:40
+msgid "Homepage Link"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkPostLink.php:31
+msgid "Post/Page Link"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkPostLink.php:71
+msgid "Post/page"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkPostLink.php:72
+msgid "Select the desired post/page you want to link to."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkPostLink.php:75
+msgid "Select text"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/LinkPostLink.php:80
+msgid "Current post"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/MediaAuthorProfile.php:40
+msgid "Author Profile Image"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/MediaSiteLogo.php:40
+msgid "Site Logo"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostContent.php:31, ../includes/ElementConditions/Conditions/Post.php:168
+msgid "Post content"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostCustomField.php:40
+msgid "Post Custom Field"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostCustomField.php:71, ../includes/DynamicContent/Fields/PostTerms.php:136, ../includes/Repeater/Providers/QueryBuilder.php:218, ../includes/Repeater/Providers/QueryBuilder.php:245
+msgid "Name"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostCustomField.php:72
+msgid "Select the custom field to show"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostCustomField.php:73
+msgid "Select custom field"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:31
+msgid "Post Date"
+msgstr ""
+
+#. translators: %s: Post time in readable format.
+#: ../includes/DynamicContent/Fields/PostDate.php:48
+msgid "%s ago"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:78
+msgid "Default"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:94
+msgid "Human readable"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:100
+msgid "Custom"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:113
+msgid "Type"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:114
+msgid "Select the post date to show"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:118
+msgid "Post published"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:122
+msgid "Post modified"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:129
+msgid "Date format"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:130
+msgid "Select the date format you want to use."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:136
+msgid "Custom date format"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostDate.php:137
+msgid "Enter the custom date format you want to use."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostExcerpt.php:29, ../includes/ElementConditions/Conditions/Post.php:139
+msgid "Post excerpt"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostExcerpt.php:68
+msgid "Excerpt length"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostId.php:31
+msgid "Post id"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:41
+msgid "Post Terms"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:102, ../includes/Repeater/Providers/QueryBuilder.php:202, ../includes/Repeater/Providers/QueryBuilder.php:211
+msgid "Taxonomy"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:103
+msgid "Select the post taxonomy to show"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:104
+msgid "Select taxonomy"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:109
+msgid "Taxonomies separator"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:110
+msgid "Enter the custom separator you want to use."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:115
+msgid "Link taxonomies?"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:116
+msgid "Specify whether or not we should link the taxonomies."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:121, ../includes/Elements/Modal/Modal.php:312, ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:83
+msgid "Yes"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:125, ../includes/Elements/Modal/Modal.php:316, ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:87
+msgid "No"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:131, ../includes/Repeater/Providers/QueryBuilder.php:106
+msgid "Order by"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:140, ../includes/Repeater/Providers/QueryBuilder.php:222, ../includes/Repeater/Providers/QueryBuilder.php:249
+msgid "Slug"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:144
+msgid "Term group"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:148, ../includes/Repeater/Providers/QueryBuilder.php:214, ../includes/Repeater/Providers/QueryBuilder.php:241
+msgid "Term id"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:160
+msgid "Parent"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:171, ../includes/Repeater/Providers/QueryBuilder.php:166, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:145, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:144, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:145
+msgid "Ascending"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTerms.php:175, ../includes/Repeater/Providers/QueryBuilder.php:170, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:149, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:148, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:149
+msgid "Descending"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/PostTitle.php:31, ../includes/ElementConditions/Conditions/Post.php:100
+msgid "Post title"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/RepeaterField.php:32
+msgid "Repeater Field"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/RepeaterField.php:62, ../includes/Integrations/ACF/AcfRepeaterProvider.php:72
+msgid "Repeater field"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/RepeaterField.php:63
+msgid "Select the desired repeater field to display."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/RepeaterField.php:65
+msgid "Select field"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/Shortcode.php:31
+msgid "Shortcode"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/Shortcode.php:52
+msgid "Enter shortcode"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/Shortcode.php:53
+msgid "Will display the value of a shortcode."
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/SiteEmailAddress.php:31
+msgid "Site email address"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/SiteTagline.php:31
+msgid "Site tagline"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/SiteTimezone.php:31
+msgid "Site timezone"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/SiteTitle.php:31
+msgid "Site title"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/TaxonomyDescription.php:31, ../includes/ElementConditions/Conditions/Archive.php:72
+msgid "Archive description"
+msgstr ""
+
+#: ../includes/DynamicContent/Fields/TaxonomyTitle.php:31, ../includes/ElementConditions/Conditions/Archive.php:47
+msgid "Archive title"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:19
+msgid "Advanced Conditionals"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:30
+msgid "Browser"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:41
+msgid "Internet Explorer"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:45
+msgid "Mozilla FireFox"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:49
+msgid "Google Chrome"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:53
+msgid "Opera"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:57
+msgid "Safari"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:61
+msgid "Microsoft Edge"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:75
+msgid "Cookie"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:122
+msgid "URL variable"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:169
+msgid "Operating system"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:180
+msgid "Windows"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:184
+msgid "Mac OS"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:188
+msgid "Linux"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:192
+msgid "Android"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:196
+msgid "iOS"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:210
+msgid "Referrer"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:254
+msgid "Function name"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:256
+msgid "Enter the function name"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:259
+msgid "Function arguments, separated by comma"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:261
+msgid "Enter the function arguments"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:265
+msgid "Expected return value"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:269
+msgid "True"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/AdvancedConditionals.php:273
+msgid "False"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Archive.php:96
+msgid "Archive taxonomy term"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Archive.php:123
+msgid "Archive term meta"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Archive.php:128, ../includes/ElementConditions/Conditions/Author.php:71, ../includes/ElementConditions/Conditions/Post.php:340, ../includes/ElementConditions/Conditions/User.php:86
+msgid "field key"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Archive.php:150, ../includes/ElementConditions/Conditions/Author.php:93, ../includes/ElementConditions/Conditions/Post.php:364, ../includes/ElementConditions/Conditions/User.php:110
+msgid "field value"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Archive.php:168
+msgid "Number of posts"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Archive.php:191
+msgid "Has additional pages"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Author.php:24
+msgid "Author username"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Author.php:42
+msgid "Author description"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Author.php:66
+msgid "Author meta field"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Author.php:110
+msgid "Author role"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Author.php:131
+msgid "Author capability"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:55, ../includes/Repeater/Providers/QueryBuilder.php:55
+msgid "Post type"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:74
+msgid "Post parent"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:207
+msgid "Post status"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:232
+msgid "Post featured image"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:252
+msgid "Post comment number"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:279
+msgid "Post template"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:304
+msgid "Post taxonomy term"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/Post.php:335
+msgid "Post custom field"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:29
+msgid "Username"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:52
+msgid "User description"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:81
+msgid "User meta field"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:130
+msgid "User role"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:155
+msgid "User capability"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:180
+msgid "User logged in status"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/User.php:209
+msgid "User is current post author"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:19
+msgid "WooCommerce Conditionals"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:30
+msgid "Customer total orders"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:58
+msgid "Customer total spent"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:86
+msgid "Cart"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:102
+msgid "Products from cart"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:124
+msgid "Cart total value"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:152
+msgid "Product"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:163
+msgid "Is on sale"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:167
+msgid "Has short description"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:171
+msgid "Has description"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WooCommerceConditionals.php:175
+msgid "Has reviews"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WordPressConditionals.php:19
+msgid "WordPress Conditionals"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WordPressConditionals.php:29
+msgid "WordPress Condition"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WordPressConditionals.php:134
+msgid "Sidebar has widgets"
+msgstr ""
+
+#: ../includes/ElementConditions/Conditions/WordPressConditionals.php:140
+msgid "Select sidebar"
+msgstr ""
+
+#: ../includes/Elements/Accordions/AccordionItem.php:83
+msgid "Accordion content"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:39
+msgid "Countdown"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:81
+msgid "Countdown type"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:82
+msgid "Select the countdown timer to use. Date will start the countdown timer from the current date until the specified date is reached. An evergreen countdown will start counting down from the specified hours/minutes and the timer will reset for each visitor"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:85, ../includes/Elements/Countdown/Countdown.php:100
+msgid "Date"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:89
+msgid "Evergreen"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:101
+msgid "Choose the date to appear"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:116, ../includes/Elements/Countdown/Countdown.php:171
+msgid "Hours"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:117
+msgid "Choose the hour to appear"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:134, ../includes/Elements/Countdown/Countdown.php:188
+msgid "Minutes"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:135
+msgid "Choose the minutes to appear"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:153
+msgid "Days"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:206
+msgid "Countdown id"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:207
+msgid "By setting an id for the countdown, you can link multiple evergreen countdowns across your website"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:221
+msgid "Action after expire"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:222
+msgid "Choose the action to perform after the countdown reaches zero"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:225
+msgid "Redirect"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:229
+msgid "Show message"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:233
+msgid "Hide"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:237
+msgid "Restart ( for evergreen timers )"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:248
+msgid "Expiration message"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:262
+msgid "Redirect URL"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:279
+msgid "Block type"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:280
+msgid "Choose if you want to display separate blocks or a single block"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:283
+msgid "Single block"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:287
+msgid "Separate blocks"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:306
+msgid "Separator type"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:307
+msgid "Choose how you want the separator to be displayed"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:310
+msgid "Colon"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:314
+msgid "Hyphen"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:318
+msgid "Slash"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:322
+msgid "None"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:342
+msgid "Add label outside block"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:357
+msgid "Days text"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:358
+msgid "Set the desired text to appear instead of days."
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:359, ../includes/Elements/Countdown/Countdown.php:468
+msgid "days"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:368
+msgid "Hours text"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:369
+msgid "Set the desired text to appear instead of hours."
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:370, ../includes/Elements/Countdown/Countdown.php:469
+msgid "hours"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:378
+msgid "Minutes text"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:379
+msgid "Set the desired text to appear instead of minutes."
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:380, ../includes/Elements/Countdown/Countdown.php:470
+msgid "minutes"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:388
+msgid "Seconds text"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:389
+msgid "Set the desired text to appear instead of seconds."
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:390, ../includes/Elements/Countdown/Countdown.php:471
+msgid "seconds"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:398
+msgid "Time Color"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:415
+msgid "Separator Color"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:436
+msgid "Inner Wrapper"
+msgstr ""
+
+#: ../includes/Elements/Countdown/Countdown.php:445
+msgid "Single Block"
+msgstr ""
+
+#: ../includes/Elements/CustomCode/CustomCode.php:41
+msgid "Apply"
+msgstr ""
+
+#: ../includes/Elements/CustomCode/CustomCode.php:49
+msgid "Using this option you can enter you own custom PHP code.The code will apply automatically as soon as you type the ending PHP tag"
+msgstr ""
+
+#: ../includes/Elements/CustomCode/CustomCode.php:50
+msgid "PHP code"
+msgstr ""
+
+#. translators: %s: PHP generated error message
+#: ../includes/Elements/CustomCode/CustomCode.php:95
+msgid "PHP code generated an error %s"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:27
+msgid "Header builder"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:65
+msgid "Select the HTML tag to use for this element. If you want to add a custom tag, make sure to only use letters and numbers"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:66
+msgid "HTML tag"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:106
+msgid "Background"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:123
+msgid "Spacing"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:131, ../includes/Elements/HeaderBuilder/HeaderBuilder.php:134
+msgid "Margin"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:142, ../includes/Elements/HeaderBuilder/HeaderBuilder.php:145
+msgid "Padding"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:154
+msgid "Size"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:163
+msgid "Width"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:174
+msgid "Min Width"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:185
+msgid "Max Width"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:196
+msgid "Height"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:207
+msgid "Min Height"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:218
+msgid "Max Height"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:229
+msgid "Sticky"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:239
+msgid "Enable sticky header"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:250
+msgid "Sticky header position"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:278
+msgid "Enable sticky after scrolling"
+msgstr ""
+
+#: ../includes/Elements/HeaderBuilder/HeaderBuilder.php:781, ../includes/Elements/InnerContent/InnerContent.php:39
+msgid "Inner Content"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:447
+msgid "First level menu items"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:454
+msgid "First level menu items active state"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:462
+msgid "First level menu last item"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:471
+msgid "Submenu wrapper"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:478
+msgid "Submenu items"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:485
+msgid "Submenu items active state"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:494
+msgid "Mobile menu trigger"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:503
+msgid "Mobile menu wrapper"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:510
+msgid "Mobile menu items"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:517
+msgid "Mobile menu items active state"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:524
+msgid "Mobile submenu wrapper"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:531
+msgid "Mobile submenu items"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:538
+msgid "Mobile submenu items active state"
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:567
+msgid "No menu selected."
+msgstr ""
+
+#: ../includes/Elements/Menu/Menu.php:568
+msgid "Please select a menu from the element options panel."
+msgstr ""
+
+#. translators: %1$s is the menu name
+#: ../includes/Elements/Menu/Menu.php:628
+msgid "Infinite loop detected. The \"%1$s\" menu is a child of a mega menu enabled for this menu and will result in an infinite loop. Please remove the \"%1$s\" menu from the child mega menu template."
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:39
+msgid "Modal"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:80
+msgid "Modal state"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:84
+msgid "Open"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:88
+msgid "Inline"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:92
+msgid "Hidden"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:109, ../includes/Elements/Modal/Modal.php:123
+msgid "Triggers"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:117
+msgid "Add new trigger"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:131
+msgid "Trigger type"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:136
+msgid "Page Load"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:140
+msgid "Scroll"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:144
+msgid "Exit intent"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:148
+msgid "Page clicks"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:152
+msgid "Element click"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:177
+msgid "Delay"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:203
+msgid "Scroll direction"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:207
+msgid "Up"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:211
+msgid "Down"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:222
+msgid "Scroll direction amount"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:253
+msgid "Number of clicks"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:277
+msgid "Select element"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:300
+msgid "Behavior"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:308
+msgid "Close on backdrop click?"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:440
+msgid "Modal content styles"
+msgstr ""
+
+#: ../includes/Elements/Modal/Modal.php:449
+msgid "Modal close button"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:39
+msgid "Pagination"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:82
+msgid "Show numbers?"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:92
+msgid "Show previous and next?"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:102
+msgid "Shorten numbers?"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:110
+msgid "&laquo; Previous"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:111
+msgid "Previous text"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:119
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:120
+msgid "Next text"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:215
+msgid "Page numbers styling"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:225
+msgid "Current page styling"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:235
+msgid "Previous text styling"
+msgstr ""
+
+#: ../includes/Elements/Pagination/Pagination.php:245
+msgid "Next text styling"
+msgstr ""
+
+#: ../includes/Elements/PostComments/PostComments.php:132
+msgid "Comments are disabled for this post"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:37
+msgid "Rating"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:69
+msgid "Number of icons"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:80
+msgid "Fill percent"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:102
+msgid "Unfilled color"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:103
+msgid "Set the color for the unfilled icons"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:114
+msgid "Fill color"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:115
+msgid "Set the color for the filled icons"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:127
+msgid "Distance between icons"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:137
+msgid "Icon size"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:212
+msgid "Rated %1$s out of %2$s"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:227
+msgid "Icons wrapper"
+msgstr ""
+
+#: ../includes/Elements/Rating/Rating.php:237
+msgid "Icon styles"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:37
+msgid "Search"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:81
+msgid "Show search button"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:82
+msgid "If no button appears, search will be triggered on enter key"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:92
+msgid "Button search text"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:93
+msgid "Type text to appear on button"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:107
+msgid "Placeholder text"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:108
+msgid "Set the desired text to appear inside"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:109
+msgid "Placeholder"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:118
+msgid "Check within WooCommerce products"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:119
+msgid "If you have wooCommerce installed check this box"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:176
+msgid "Form"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:186
+msgid "Input"
+msgstr ""
+
+#: ../includes/Elements/Search/Search.php:196
+msgid "Button"
+msgstr ""
+
+#: ../includes/Elements/SliderBuilder/SliderBuilder.php:193
+msgid "Infinite"
+msgstr ""
+
+#: ../includes/Elements/SliderBuilder/SliderBuilder.php:194
+msgid "Set to yes to enable continuous loop mode. Please note that this is disabled in editor mode."
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:38
+msgid "Social Share Buttons"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:79
+msgid "Add new share icon"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:123
+msgid "Choose an icon"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:201
+msgid "Icon label"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:202
+msgid "Type text to inside the share button"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:223
+msgid "Layout type"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:224
+msgid "Choose how you want the buttons to be displayed"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:227
+msgid "Minimal"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:231
+msgid "Colored"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:251
+msgid "Rounded"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:252
+msgid "Check to make rounded buttons"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:268
+msgid "Stretched"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:269
+msgid "Check to make buttons stretched"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:410
+msgid "Share on"
+msgstr ""
+
+#: ../includes/Elements/SocialShare/SocialShare.php:433
+msgid "Social block"
+msgstr ""
+
+#: ../includes/Elements/Tabs/TabsItem.php:83
+msgid "Tab content"
+msgstr ""
+
+#: ../includes/Features/Connector/Connector.php:78
+msgid "Library share is not enabled."
+msgstr ""
+
+#: ../includes/Features/Connector/Connector.php:85
+msgid "You do not have access to the shared library."
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:154
+msgid "There was a problem contacting Typekit Servers. Please try again!"
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:162
+msgid "Bad request"
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:164
+msgid "Api Token invalid"
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:166
+msgid "Too many requests. Please try again later!"
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:168
+msgid "The resource you are requesting was not found!"
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:170
+msgid "Could not contact Typekit servers. Please try again later!"
+msgstr ""
+
+#: ../includes/Fonts/Providers/TypeKit.php:172
+msgid "Typekit API is offline. Please try again later!"
+msgstr ""
+
+#: ../includes/Integrations/ACF/Acf.php:54
+msgid "ACF"
+msgstr ""
+
+#: ../includes/Integrations/ACF/AcfRepeaterProvider.php:14
+msgid "Acf Repeater"
+msgstr ""
+
+#: ../includes/Integrations/ACF/AcfRepeaterProvider.php:73
+msgid "Select repeater field"
+msgstr ""
+
+#: ../includes/Integrations/Metabox/Metabox.php:44
+msgid "Metabox"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/WooCommerce.php:95
+msgid "WooCommerce"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/WooCommerce.php:161
+msgid "Thank you page"
+msgstr ""
+
+#: ../includes/Repeater/Providers/ActivePageQuery.php:13
+msgid "Active Page Query"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:14
+msgid "Query builder"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:58
+msgid "Select post types"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:67
+msgid "Posts per page"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:76
+msgid "Offset"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:85
+msgid "Ignore sticky posts"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:86
+msgid "Set to yes to prevent moving the sticky posts to the top of the results."
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:119
+msgid "author"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:123
+msgid "title"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:127
+msgid "name"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:131
+msgid "type"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:135, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:118, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:117, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:118
+msgid "date"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:139
+msgid "Modified date"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:143
+msgid "parent"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:147, ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:106, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:105, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:106
+msgid "Random"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:151
+msgid "Comment count"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:183, ../includes/Repeater/Providers/RecentPosts.php:49
+msgid "Exclude current post?"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:192
+msgid "Taxonomy query"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:193
+msgid "Taxonomy query (%s)"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:226, ../includes/Repeater/Providers/QueryBuilder.php:253
+msgid "Term taxonomy id"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:237
+msgid "Field"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:264
+msgid "Terms"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:265
+msgid "Set the desired terms separated by comma"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:266
+msgid "term_1, term_2"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:274, ../includes/Repeater/Providers/QueryBuilder.php:432
+msgid "Operator"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:278, ../includes/Repeater/Providers/QueryBuilder.php:400
+msgid "IN"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:282, ../includes/Repeater/Providers/QueryBuilder.php:404
+msgid "NOT IN"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:286, ../includes/Repeater/Providers/QueryBuilder.php:321, ../includes/Repeater/Providers/QueryBuilder.php:484
+msgid "AND"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:290
+msgid "EXISTS"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:294, ../includes/Repeater/Providers/QueryBuilder.php:416, ../includes/Repeater/Providers/QueryBuilder.php:420
+msgid "NOT EXISTS"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:306
+msgid "Include children"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:317
+msgid "Taxonomy query relation"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:325, ../includes/Repeater/Providers/QueryBuilder.php:488
+msgid "OR"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:338
+msgid "Meta query"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:339
+msgid "Meta query (%s)"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:348
+msgid "Meta key"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:356
+msgid "Meta value"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:364
+msgid "Compare"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:368
+msgid "Equals"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:372
+msgid "Not equal"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:376
+msgid "Greater"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:380
+msgid "Greater or equal"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:384
+msgid "Lower"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:388
+msgid "Lower or equal"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:392
+msgid "Like"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:396
+msgid "NOT like"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:408
+msgid "Between"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:412
+msgid "NOT between"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:436
+msgid "NUMERIC"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:440
+msgid "BINARY"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:444
+msgid "CHAR"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:448
+msgid "DATE"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:452
+msgid "DATETIME"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:456
+msgid "DECIMAL"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:460
+msgid "SIGNED"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:464
+msgid "TIME"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:468
+msgid "UNSIGNED"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:480
+msgid "Meta query relation"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:499
+msgid "Post author"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:503
+msgid "any author"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:507
+msgid "current logged-in user"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:511, ../includes/Repeater/Providers/QueryBuilder.php:535
+msgid "custom"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:522
+msgid "Custom author id"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:523
+msgid "Set the custom author id separated by comma."
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:527
+msgid "any"
+msgstr ""
+
+#: ../includes/Repeater/Providers/QueryBuilder.php:531
+msgid "current user"
+msgstr ""
+
+#: ../includes/Repeater/Providers/RecentPosts.php:14
+msgid "Recent posts"
+msgstr ""
+
+#: ../includes/Integrations/ACF/Fields/AcfFieldBase.php:30
+msgid "ACF Field"
+msgstr ""
+
+#: ../includes/Integrations/ACF/Fields/AcfFieldBase.php:45, ../includes/Integrations/ACF/Fields/AcfFieldBase.php:47, ../includes/Integrations/Metabox/Traits/Base.php:19, ../includes/Integrations/Metabox/Traits/Base.php:21
+msgid "Field to display"
+msgstr ""
+
+#: ../includes/Integrations/ACF/Fields/AcfFieldBase.php:46, ../includes/Integrations/Metabox/Traits/Base.php:20
+msgid "Select the desired field you want to display."
+msgstr ""
+
+#: ../includes/Integrations/ACF/Fields/AcfFieldBase.php:105
+msgid "Options page"
+msgstr ""
+
+#: ../includes/Integrations/Metabox/Traits/Base.php:8
+msgid "Meta Box Field"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ArchiveAddToCart/ArchiveAddToCart.php:37
+msgid "Loop add to cart"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ArchiveAddToCart/ArchiveAddToCart.php:102, ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:115, ../includes/Integrations/WooCommerce/Elements/ProductAddToCart/ProductAddToCart.php:89, ../includes/Integrations/WooCommerce/Elements/ProductDescription/ProductDescription.php:114, ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:144, ../includes/Integrations/WooCommerce/Elements/ProductMeta/ProductMeta.php:91, ../includes/Integrations/WooCommerce/Elements/ProductPrice/ProductPrice.php:93, ../includes/Integrations/WooCommerce/Elements/ProductRating/ProductRating.php:148, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:177, ../includes/Integrations/WooCommerce/Elements/ProductReviewsForm/ProductReviewsForm.php:88, ../includes/Integrations/WooCommerce/Elements/ProductStock/ProductStock.php:91, ../includes/Integrations/WooCommerce/Elements/ProductTabs/ProductTabs.php:99, ../includes/Integrations/WooCommerce/Elements/ProductTitle/ProductTitle.php:141, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:178
+msgid "The current page settings doesn't provide a valid product. You can set the active page query and select a product from Page options > Dynamic data preview source"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ArchiveAddToCart/ArchiveAddToCart.php:114, ../includes/Integrations/WooCommerce/Elements/ProductAddToCart/ProductAddToCart.php:101
+msgid "Add to cart button"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ArchiveAddToCart/ArchiveAddToCart.php:124
+msgid "Added to cart link"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:37
+msgid "Product cross sells"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:81, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:80, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:81
+msgid "Number of products to show"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:82, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:81, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:82
+msgid "Choose how many products you want to show."
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:91, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:90, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:91
+msgid "Number of columns"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:92, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:91, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:92
+msgid "Choose how many columns to use for displaying products."
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:103, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:102, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:103
+msgid "Order By"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:122, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:121, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:122
+msgid "modified"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:126, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:125, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:126
+msgid "Menu order"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:130, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:129, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:130
+msgid "price"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:185, ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:104, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:196, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:191
+msgid "Title style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:195, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:206, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:201
+msgid "Product wrapper style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:205, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:216, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:211
+msgid "Product image style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:215, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:226, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:221
+msgid "Product title style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartCrossSells/CartCrossSells.php:225, ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:236, ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:231
+msgid "Product price style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartProducts/CartProducts.php:37
+msgid "Cart products"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartProducts/CartProducts.php:133
+msgid "Actions buttons"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartProducts/CartProducts.php:143
+msgid "Coupon input"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartProducts/CartProducts.php:153
+msgid "Coupon submit button"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:37
+msgid "Cart totals"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:114
+msgid "Subtotal title styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:124
+msgid "Subtotal ammount styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:134
+msgid "Total title styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:144
+msgid "Total ammount styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CartTotals/CartTotals.php:154
+msgid "Proceed to checkout styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutCoupon/CheckoutCoupon.php:37
+msgid "Checkout coupon notice"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutCustomerDetails/CheckoutCustomerDetails.php:37
+msgid "Checkout customer details"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutCustomerDetails/CheckoutCustomerDetails.php:140
+msgid "Checkout fields are not defined."
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutCustomerDetails/CheckoutCustomerDetails.php:182, ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:144
+msgid "Heading"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutCustomerDetails/CheckoutCustomerDetails.php:192
+msgid "Inputs"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutCustomerDetails/CheckoutCustomerDetails.php:202
+msgid "Labels"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutFormWrapper/CheckoutFormWrapper.php:39
+msgid "Checkout form wrapper"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutLogin/CheckoutLogin.php:37
+msgid "Checkout login notice"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutOrderReview/CheckoutOrderReview.php:37
+msgid "Checkout order review"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:39
+msgid "Checkout thank you"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:157
+msgid "No valid order could be loaded for preview."
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:158
+msgid "For best results, you should have at least one WooCommerce order processed in order to display it inside the editor."
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:173
+msgid "Thank you message"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:183
+msgid "Order details titles and values"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:193
+msgid "Order details values"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:203
+msgid "Order details wrapper"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:213
+msgid "Order details title"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:223
+msgid "Customer details wrapper"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:233
+msgid "Customer details titles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:243, ../includes/Integrations/WooCommerce/Elements/CheckoutThankYou/CheckoutThankYou.php:253
+msgid "Customer details billing address"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/MiniCart/MiniCart.php:37
+msgid "Mini cart"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/MiniCart/MiniCart.php:369
+msgid "Cart count"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/MiniCart/MiniCart.php:379
+msgid "Cart icon"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/MiniCart/MiniCart.php:389
+msgid "Cart subtotal"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/MiniCart/MiniCart.php:399
+msgid "Cart details"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/Notices/Notices.php:37
+msgid "Store notices"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/Notices/Notices.php:80
+msgid "Notices wrapper"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/Notices/Notices.php:90
+msgid "Notice message wrapper"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:37
+msgid "Product additional info"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:154
+msgid "Table"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:164
+msgid "Table row"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:174
+msgid "Label"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAdditionalInfo/ProductAdditionalInfo.php:184
+msgid "Value"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAddToCart/ProductAddToCart.php:37
+msgid "Add to cart"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductAddToCart/ProductAddToCart.php:111
+msgid "Quantity input"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductBreadcrumbs/ProductBreadcrumbs.php:37
+msgid "Product breadcrumbs"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductBreadcrumbs/ProductBreadcrumbs.php:79, ../includes/Integrations/WooCommerce/Elements/ProductTabs/ProductTabs.php:79
+msgid "Delimiter"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductBreadcrumbs/ProductBreadcrumbs.php:110
+msgid "Links style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductBreadcrumbs/ProductBreadcrumbs.php:119
+msgid "Navigation styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductDescription/ProductDescription.php:37
+msgid "Product description"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductDescription/ProductDescription.php:81
+msgid "Description type"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductDescription/ProductDescription.php:82
+msgid "Choose what type of description for this product you want to show"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductDescription/ProductDescription.php:85
+msgid "Short"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductDescription/ProductDescription.php:89
+msgid "Full"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:37
+msgid "Product images"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:79
+msgid "Show Sale Flash"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:172
+msgid "Zoom icon style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:182
+msgid "Thumbnails style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductImages/ProductImages.php:192
+msgid "Sale badge style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductMeta/ProductMeta.php:37
+msgid "Product meta"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductMeta/ProductMeta.php:103
+msgid "SKU wrapper"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductMeta/ProductMeta.php:113
+msgid "Link styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductPrice/ProductPrice.php:37
+msgid "Product Price"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductPrice/ProductPrice.php:105
+msgid "Price symbol"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductPrice/ProductPrice.php:115
+msgid "Price amount"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductPrice/ProductPrice.php:125
+msgid "Sale price"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductPrice/ProductPrice.php:135
+msgid "Tax label"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductRating/ProductRating.php:37
+msgid "Product rating"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductRating/ProductRating.php:139
+msgid "Reviews are disabled for products"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductRating/ProductRating.php:163
+msgid "This product doesn't have any ratings"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductRating/ProductRating.php:177
+msgid "Rating star style"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductRating/ProductRating.php:187
+msgid "Review link styles"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductRelated/ProductRelated.php:37
+msgid "Related products"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductReviewsForm/ProductReviewsForm.php:37
+msgid "Product reviews form"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductReviewsForm/ProductReviewsForm.php:100
+msgid "Rating empty stars"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductReviewsForm/ProductReviewsForm.php:110
+msgid "Rating filled stars"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductReviewsForm/ProductReviewsForm.php:120
+msgid "Submit button"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductStock/ProductStock.php:37
+msgid "Product stock"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductStock/ProductStock.php:101
+msgid "Stock management is not available for this product. You can set the active page query and select a product from Page options > Dynamic data preview source"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductTabs/ProductTabs.php:37
+msgid "Product data tabs"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductTitle/ProductTitle.php:37
+msgid "Product title"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/ProductUpSells/ProductUpSells.php:37
+msgid "Product upsells"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/WooBilling/WooBilling.php:37
+msgid "Billing form"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/WooCheckoutInfo/WooCheckoutInfo.php:37
+msgid "Checkout additional info"
+msgstr ""
+
+#: ../includes/Integrations/WooCommerce/Elements/WooCheckoutPayment/WooCheckoutPayment.php:37
+msgid "Checkout payment"
+msgstr ""

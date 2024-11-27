@@ -1,0 +1,6 @@
+.zb-el-ratingWrapper {
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,71 @@
+/*
+ * Security Ninja - Events Logger add-on
+ * (c) Web factory Ltd, 2014
+ */
+
+
+.toplevel_page_wf-sn #sn_tabscont #sn-el-datatable {
+  width: 100% !important;
+}
+
+.toplevel_page_wf-sn #sn_tabscont #sn-el-datatable .avatar {
+  float: left;
+  margin-right: 10px;
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
+}
+
+.toplevel_page_wf-sn #sn_tabscont #sn-el-datatable_wrapper .dashicons.dashicons-info {
+  color:#499ed7;
+}
+
+.toplevel_page_wf-sn #sn_tabscont #sn-el-datatable .dashicons {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.toplevel_page_wf-sn #sn_tabscont #sn-el-datatable td {
+  vertical-align: top;
+}
+
+.toplevel_page_wf-sn #sn_tabscont #sn-el-datatable tr th {
+  text-align: left;
+}
+
+.toplevel_page_wf-sn #sn_tabscont .wf-sn-el-toggle-options .dashicons{
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+.toplevel_page_wf-sn #sn_tabscont #email_modules {
+  width: 170px;
+}
+
+/*** Added ***/
+.toplevel_page_wf-sn #sn_tabscont #sn_logger {
+  width: 100%;
+
+}
+
+.toplevel_page_wf-sn #sn_tabscont .wf-sn-el-options,
+.toplevel_page_wf-sn #sn_tabscont .sn-el-datatable_filter {
+  display: inline-block;
+  width: 40%;
+}
+
+
+#sn-el-datatable_length select {
+  width: 60px;
+}
+
+#sn-el-datatable_wrapper {
+  background: #ffffff;
+  margin-top: 20px;
+}
+
+#sn-el-datatable_info,
+#sn-el-datatable_filter,
+#sn-el-datatable_length {
+  padding: 5px;
+}
