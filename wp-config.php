@@ -39,6 +39,43 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+
+define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'do',
+    'access-key-id' => 'DO00R8P87EGWR6PVZEWH',
+    'secret-access-key' => 'nJhEFOnfiQkCluhrui0nR1evkmUY0FMQA+yDCQz3Wbs',
+    'bucket' => 'wpdeployoffload1',
+    'region' => 'sfo3',
+    'copy-to-s3' => 'true',
+    'delivery-provider' => 'other',
+    'delivery-provider-name' => 'Bunny',
+    'enable-object-prefix' => 'true',
+    'object-prefix' => 'content/user1',
+    'serve-from-s3' => 'true',
+    'remove-local-file' => 'true'
+) ) );
+
+
+/*define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'do',
+    'access-key-id' => 'DO00R8P87EGWR6PVZEWH',
+    'secret-access-key' => 'nJhEFOnfiQkCluhrui0nR1evkmUY0FMQA+yDCQz3Wbs',
+   // 'bucket' => 'wpdeployoffload1',
+    'copy-to-s3' => 'true',
+    'delivery-provider' => 'other',
+    'delivery-provider-name' => 'Bunny',
+    'enable-object-prefix' => 'true',
+    'object-prefix' => 'superadmin/usermain/xxygjkasdgsdjg',
+    'serve-from-s3' => 'true',
+    'remove-local-file' => 'true'
+) ) );*/
+
+
+
+
+
+
+
 if ( !defined('WP_CLI') ) {
     define( 'WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
     define( 'WP_HOME',    $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
