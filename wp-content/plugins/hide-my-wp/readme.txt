@@ -29,9 +29,16 @@ This filter will protect you from SQL Injections and Script Intrusions
 
 
 == Changelog ==
+= 8.0.21 =
+Update - Added gif and tiff to media redirect in Hide WP Common Paths
+Update - Allow activating hmwp_manage_settings capability only for a user using Roles & Capabilities plugin
+Fixed - Layout and improved functionality
+
 = 8.0.20 =
 Update - Compatibility with WP 6.7
+Update - Compatibility with LiteSpeed Quic Cloud IP addresses automatically
 Fixed - Litespeed cache plugin compatibility and set /cache/ls directory by default
+Fixed - Whitelist website IP address on REST API disable to be able to be accessed by the installed plugins
 
 = 8.0.19 =
 Fixed - Compatibility with LiteSpeed when CDN is not set

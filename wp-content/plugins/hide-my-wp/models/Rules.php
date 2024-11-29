@@ -10,12 +10,21 @@
 defined( 'ABSPATH' ) || die( 'Cheatin\' uh?' );
 
 class HMWP_Models_Rules {
+
 	public $root_path;
 	/**
 	 * @var false|string Current Server Config File for rewrite rules
 	 */
 	public $config_file;
 	public $config_chmod;
+	/**
+	 * @var array known logged in cookies & whitelist cookies
+	 */
+	public $whitelist_cookies = array();
+	/**
+	 * @var array known logged in ips & whitelist ips
+	 */
+	public $whitelist_ips = array();
 
 	public function __construct() {
 		$this->root_path = HMWP_Classes_Tools::getRootPath();
@@ -39,6 +48,37 @@ class HMWP_Models_Rules {
 		} else {
 			$this->config_file = false;
 		}
+
+		//Set known logged in cookies
+		$this->whitelist_cookies[] = 'wordpress_logged_in_';
+		$this->whitelist_cookies[] = HMWP_LOGGED_IN_COOKIE;
+		//Let third party cookie check
+		$this->whitelist_cookies = apply_filters( 'hmwp_rules_whitelisted_cookies' , $this->whitelist_cookies );
+		$this->whitelist_cookies = array_unique( $this->whitelist_cookies );
+
+		// Add the whitelist IPs in config for hidden path access
+		if( $whitelist_ip = HMWP_Classes_Tools::getOption( 'whitelist_ip' ) ){
+			if( !empty( $whitelist_ip ) ){
+				if( $whitelist_ip = (array) json_decode( $whitelist_ip, true ) ){
+					$this->whitelist_ips = array_merge( $this->whitelist_ips, $whitelist_ip );
+				}
+			}
+		}
+
+		// Let third party IP addresses
+		$this->whitelist_ips = apply_filters( 'hmwp_rules_whitelisted_ips' , $this->whitelist_ips );
+
+		// Filter / Sanitize IP addresses
+		if( !empty($this->whitelist_ips) ){
+			$this->whitelist_ips = array_filter(array_map( function ( $ip ){
+				if ( !filter_var( $ip, FILTER_VALIDATE_IP ) ) {
+					return false;
+				}
+				return trim($ip);
+			}, $this->whitelist_ips ));
+		}
+		$this->whitelist_ips = array_unique( $this->whitelist_ips );
+
 	}
 
 	/**
@@ -456,6 +496,8 @@ class HMWP_Models_Rules {
 		if ( in_array( 'image', $types ) ) {
 			$extensions[] = '\.jpg';
 			$extensions[] = '\.jpeg';
+			$extensions[] = '\.tiff';
+			$extensions[] = '\.gif';
 			$extensions[] = '\.bmp';
 			$extensions[] = '\.png';
 			$extensions[] = '\.webp';
@@ -472,16 +514,25 @@ class HMWP_Models_Rules {
                 if ( in_array( 'media', $types ) ) {
                     if ( HMWP_Classes_Tools::getDefault( 'hmwp_upload_url' ) <> HMWP_Classes_Tools::getOption( 'hmwp_upload_url' ) ) {
                         $rules .= 'set $cond "";' . PHP_EOL;
-                        $rules .= 'if ($http_cookie !~* "wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . '" ) {  set $cond cookie; }' . PHP_EOL;
+	                    if ( !empty($this->whitelist_ips) ){
+		                    foreach ($this->whitelist_ips as $ip){
+			                    $rules .= 'if ($remote_addr = "' . $ip . '" ) {  set $cond "whitelist"; }' . PHP_EOL;
+		                    }
+	                    }
+                        $rules .= 'if ($http_cookie !~* "' . join( '|', $this->whitelist_cookies ) . '") {  set $cond "${cond}cookie"; }' . PHP_EOL;
                         $rules .= 'if ($request_uri ~* ^' . $home_root . $wp_content . '/' . HMWP_Classes_Tools::getDefault( 'hmwp_upload_url' ) . '/[^\.]+.[^\.]+) {  set $cond "${cond}+redirect_uri"; }' . PHP_EOL;
-                        $rules .= 'if ($cond = "cookie+redirect_uri") { rewrite ^' . $home_root . $wp_content . '/' . HMWP_Classes_Tools::getDefault( 'hmwp_upload_url' ) . '/(.*)$ /'.HMWP_Classes_Tools::getOption( 'hmwp_upload_url' ).'/$1 redirect;' . PHP_EOL;
-                        $rules .= '}' . PHP_EOL;
+                        $rules .= 'if ($cond = "cookie+redirect_uri") { rewrite ^' . $home_root . $wp_content . '/' . HMWP_Classes_Tools::getDefault( 'hmwp_upload_url' ) . '/(.*)$ /'.HMWP_Classes_Tools::getOption( 'hmwp_upload_url' ).'/$1 redirect; }' . PHP_EOL;
                     }
                 }
 
 				if ( HMWP_Classes_Tools::getDefault( 'hmwp_wp-content_url' ) <> HMWP_Classes_Tools::getOption( 'hmwp_wp-content_url' ) ) {
 					$rules .= 'set $cond "";' . PHP_EOL;
-					$rules .= 'if ($http_cookie !~* "wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . '" ) {  set $cond cookie; }' . PHP_EOL;
+					if ( !empty($this->whitelist_ips) ){
+						foreach ($this->whitelist_ips as $ip){
+							$rules .= 'if ($remote_addr = "' . $ip . '" ) {  set $cond "whitelist"; }' . PHP_EOL;
+						}
+					}
+					$rules .= 'if ($http_cookie !~* "' . join( '|', $this->whitelist_cookies ) . '") {  set $cond "${cond}cookie"; }' . PHP_EOL;
 					$rules .= 'if ($request_uri ~* ^' . $home_root . $wp_content . '/?$) { set $cond "${cond}+deny_uri"; }' . PHP_EOL;
 					$rules .= 'if ($request_uri ~* ^' . $home_root . $wp_content . '/[^\.]+/?$) { set $cond "${cond}+deny_uri"; }' . PHP_EOL;
 					if ( HMWP_Classes_Tools::getDefault( 'hmwp_wp-includes_url' ) <> HMWP_Classes_Tools::getOption( 'hmwp_wp-includes_url' ) ) {
@@ -519,7 +570,12 @@ class HMWP_Models_Rules {
                     $rules .= "<IfModule mod_rewrite.c>" . PHP_EOL;
                     $rules .= "RewriteEngine On" . PHP_EOL;
                     $rules .= "RewriteBase $home_root" . PHP_EOL;
-                    $rules .= "RewriteCond %{HTTP:Cookie} !(wordpress_logged_in_|" . HMWP_LOGGED_IN_COOKIE . ") [NC]" . PHP_EOL;
+					if ( !empty($this->whitelist_ips) ){
+						foreach ($this->whitelist_ips as $ip){
+							$rules .= "RewriteCond %{REMOTE_ADDR} !^$ip$" . PHP_EOL;
+						}
+					}
+                    $rules .= "RewriteCond %{HTTP:Cookie} !(" . join( '|', $this->whitelist_cookies ) . ") [NC]" . PHP_EOL;
                     $rules .= "RewriteCond %{THE_REQUEST} " . $home_root . $wp_content . '/' . HMWP_Classes_Tools::getDefault( 'hmwp_upload_url' ) . "/[^\.]+.[^\.]+ [NC]" . PHP_EOL;
                     $rules .= "RewriteRule ^([_0-9a-zA-Z-]+/)?" . $wp_content  . '/' . HMWP_Classes_Tools::getDefault( 'hmwp_upload_url' ) . "/(.*)$ /" . HMWP_Classes_Tools::getOption( 'hmwp_upload_url' ) . "/$2  [L,R=301]" . PHP_EOL;
                     $rules .= "</IfModule>" . PHP_EOL . PHP_EOL;
@@ -822,7 +878,12 @@ class HMWP_Models_Rules {
 			$rules .= "<IfModule mod_rewrite.c>" . PHP_EOL;
 			$rules .= "RewriteEngine On" . PHP_EOL;
 			$rules .= "RewriteBase $home_root" . PHP_EOL;
-			$rules .= "RewriteCond %{HTTP:Cookie} !(wordpress_logged_in_|" . HMWP_LOGGED_IN_COOKIE . ") [NC]" . PHP_EOL;
+			if ( !empty($this->whitelist_ips) ){
+				foreach ($this->whitelist_ips as $ip){
+					$rules .= "RewriteCond %{REMOTE_ADDR} !^$ip$" . PHP_EOL;
+				}
+			}
+			$rules .= "RewriteCond %{HTTP:Cookie} !(" . join( '|', $this->whitelist_cookies ) . ") [NC]" . PHP_EOL;
 			if ( defined( 'WP_ROCKET_MINIFY_CACHE_URL' ) ) { //If WP-Rocket is installed
 				$rules .= "RewriteCond %{REQUEST_URI} !" . str_replace( array(
 						home_url() . '/', HMWP_Classes_Tools::getDefault( 'hmwp_wp-content_url' )
@@ -891,7 +952,7 @@ class HMWP_Models_Rules {
                     <rule name="HideMyWp: block_oldpaths_content" stopProcessing="true">
                         <match url="^' . $wp_content . '/?$" ignoreCase="false" />
                          <conditions>
-                          <add input="{HTTP_COOKIE}" pattern="(wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . ')" negate="true" />
+                          <add input="{HTTP_COOKIE}" pattern="(' . join( '|', $this->whitelist_cookies ) . ')" negate="true" />
                          </conditions>
                         <action type="CustomResponse" statusCode="404" statusReason="File Not Found" statusDescription="The requested path was not found" />
                     </rule>';
@@ -899,7 +960,7 @@ class HMWP_Models_Rules {
                     <rule name="HideMyWp: block_oldpaths_content_paths" stopProcessing="true">
                         <match url="^' . $wp_content . '/[^\.]+/?$" ignoreCase="false" />
                          <conditions>
-                          <add input="{HTTP_COOKIE}" pattern="(wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . ')" negate="true" />
+                          <add input="{HTTP_COOKIE}" pattern="(' . join( '|', $this->whitelist_cookies ) . ')" negate="true" />
                          </conditions>
                         <action type="CustomResponse" statusCode="404" statusReason="File Not Found" statusDescription="The requested path was not found" />
                     </rule>';
@@ -910,7 +971,7 @@ class HMWP_Models_Rules {
                     <rule name="HideMyWp: block_oldpaths_plugin" stopProcessing="true">
                         <match url="^' . HMWP_Classes_Tools::getDefault( 'hmwp_plugin_url' ) . '/[^\.]+(' . join( '|', $extensions ) . ')' . '" ignoreCase="false" />
                          <conditions>
-                          <add input="{HTTP_COOKIE}" pattern="(wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . ')" negate="true" />
+                          <add input="{HTTP_COOKIE}" pattern="(' . join( '|', $this->whitelist_cookies ) . ')" negate="true" />
                          </conditions>
                         <action type="CustomResponse" statusCode="404" statusReason="File Not Found" statusDescription="The requested path was not found" />
                     </rule>';
@@ -920,7 +981,7 @@ class HMWP_Models_Rules {
                     <rule name="HideMyWp: block_oldpaths_themes" stopProcessing="true">
                         <match url="^' . HMWP_Classes_Tools::getDefault( 'hmwp_themes_url' ) . '/[^\.]+(' . join( '|', $extensions ) . ')' . '" ignoreCase="false" />
                          <conditions>
-                          <add input="{HTTP_COOKIE}" pattern="(wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . ')" negate="true" />
+                          <add input="{HTTP_COOKIE}" pattern="(' . join( '|', $this->whitelist_cookies ) . ')" negate="true" />
                          </conditions>
                         <action type="CustomResponse" statusCode="404" statusReason="File Not Found" statusDescription="The requested path was not found" />
                     </rule>';
@@ -930,7 +991,7 @@ class HMWP_Models_Rules {
                     <rule name="HideMyWp: block_upgrade" stopProcessing="true">
                         <match url="^([_0-9a-zA-Z-]+/)?(upgrade.php|install.php)" ignoreCase="false" />
                          <conditions>
-                          <add input="{HTTP_COOKIE}" pattern="(wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . ')" negate="true" />
+                          <add input="{HTTP_COOKIE}" pattern="(' . join( '|', $this->whitelist_cookies ) . ')" negate="true" />
                          </conditions>
                         <action type="CustomResponse" statusCode="404" statusReason="File Not Found" statusDescription="The requested path was not found" />
                     </rule>';
@@ -951,7 +1012,8 @@ class HMWP_Models_Rules {
 		if ( HMWP_Classes_Tools::isNginx() ) {
 
 			if ( HMWP_Classes_Tools::getOption( 'hmwp_hide_authors' ) ) {
-				$rules .= 'if ($http_cookie !~* "wordpress_logged_in_|' . HMWP_LOGGED_IN_COOKIE . '" ) {  set $cond cookie; }' . PHP_EOL;
+				$rules .= 'set $cond "";' . PHP_EOL;
+				$rules .= 'if ($http_cookie !~* "' . join( '|', $this->whitelist_cookies ) . '") {  set $cond cookie; }' . PHP_EOL;
 				$rules .= 'if ($request_uri ~* author=\d+$) { set $cond "${cond}+author_uri"; }' . PHP_EOL;
 				$rules .= 'if ($cond = "cookie+author_uri") {  return 404; } ' . PHP_EOL;
 			}
@@ -974,18 +1036,18 @@ class HMWP_Models_Rules {
 			}
 
 			if ( HMWP_Classes_Tools::getOption( 'hmwp_detectors_block' ) ) {
-				$rules .= 'if ( $remote_addr ~ \'35.214.130.87\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $remote_addr ~ \'192.185.4.40\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $remote_addr ~ \'15.235.50.223\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $remote_addr ~ \'172.105.48.130\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $remote_addr ~ \'167.99.233.123\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_user_agent ~ \'wpthemedetector\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_referer ~ \'wpthemedetector\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_user_agent ~ \'builtwith\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_user_agent ~ \'isitwp\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_user_agent ~ \'wapalyzer\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_referer ~ \'mShots\' ) { return 404; }' . PHP_EOL;
-				$rules .= 'if ( $http_referer ~ \'WhatCMS\' ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $remote_addr = "35.214.130.87" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $remote_addr = "192.185.4.40" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $remote_addr = "15.235.50.223" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $remote_addr = "172.105.48.130" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $remote_addr = "167.99.233.123" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_user_agent ~ "wpthemedetector" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_referer ~ "wpthemedetector" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_user_agent ~ "builtwith" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_user_agent ~ "isitwp" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_user_agent ~ "wapalyzer" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_referer ~ "mShots" ) { return 404; }' . PHP_EOL;
+				$rules .= 'if ( $http_referer ~ "WhatCMS" ) { return 404; }' . PHP_EOL;
 			}
 
 		} elseif ( HMWP_Classes_Tools::isApache() || HMWP_Classes_Tools::isLitespeed() ) {

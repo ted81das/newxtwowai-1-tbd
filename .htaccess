@@ -1,15 +1,25 @@
 # BEGIN HMWP_RULES
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^([_0-9a-zA-Z-]+/)?ajax-call$ /wp-admin/admin-ajax.php [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?ajax$ /wp-admin/admin-ajax.php [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?admindash/(.*) /wp-admin/$2 [QSA,L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?signi$ /wp-login.php [QSA,L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?signi/(.*) /wp-login.php$2 [QSA,L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?lostpass$ /wp-login.php?action=lostpassword [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?mysignin$ /wp-login.php [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?mysignin/(.*) /wp-login.php$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?lostpassword$ /wp-login.php?action=lostpassword [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?register$ /wp-login.php?action=register [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?disconnect$ /wp-login.php?action=logout [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/29f2f24f7b/(.*) /wp-content/plugins/admin-bar/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/31a293c1d0/(.*) /wp-content/plugins/amazon-s3-and-cloudfront/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/e32b144910/(.*) /wp-content/plugins/astra-addon/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/da66b843be/(.*) /wp-content/plugins/branda-white-labeling/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/485c463dd9/(.*) /wp-content/plugins/ewww-image-optimizer/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/d0f4711431/(.*) /wp-content/plugins/hide-my-wp/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/63aa64c41f/(.*) /wp-content/plugins/leira-roles/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/6bdcbf3405/(.*) /wp-content/plugins/rolemaster-suite/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/c6410261ce/(.*) /wp-content/plugins/security-ninja-premium/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/9ac854dc7f/(.*) /wp-content/plugins/stops-core-theme-and-plugin-updates/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/8202b6bda0/(.*) /wp-content/plugins/userswp-recaptcha/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/46268246b7/(.*) /wp-content/plugins/userswp/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/e7d5dd752d/(.*) /wp-content/plugins/zionbuilder-pro/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/5cefe085f2/(.*) /wp-content/plugins/zionbuilder/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/(.*) /wp-content/plugins/$2 [QSA,L]
@@ -21,7 +31,6 @@ RewriteRule ^([_0-9a-zA-Z-]+/)?core/(.*) /wp-content/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?lib/(.*) /wp-includes/$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?comments/(.*) /wp-comments-post.php$2 [QSA,L]
 RewriteRule ^([_0-9a-zA-Z-]+/)?writer/(.*) /author/$2 [QSA,L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?apijson/(.*) /wp-json/$2 [QSA,L]
 </IfModule>
 
 

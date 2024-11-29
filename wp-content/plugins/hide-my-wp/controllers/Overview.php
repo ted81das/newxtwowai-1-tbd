@@ -652,7 +652,7 @@ class HMWP_Controllers_Overview extends HMWP_Classes_FrontController {
 	public function action() {
 		parent::action();
 
-		if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+		if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 			return;
 		}
 

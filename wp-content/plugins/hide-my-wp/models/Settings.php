@@ -194,7 +194,6 @@ class HMWP_Models_Settings {
 	public function checkMainPathsChange() {
 		//If the admin is changed, require a logout if necessary
 		$lastsafeoptions = HMWP_Classes_Tools::getOptions( true );
-		$options         = HMWP_Classes_Tools::getOptions();
 
 		if ( ! empty( $lastsafeoptions ) ) {
 			if ( $lastsafeoptions['hmwp_admin_url'] <> HMWP_Classes_Tools::getOption( 'hmwp_admin_url' ) ) {
@@ -225,6 +224,12 @@ class HMWP_Models_Settings {
 		if ( ! empty( $params ) ) {
 			foreach ( $params as $key => $value ) {
 				if ( in_array( $key, array_keys( HMWP_Classes_Tools::$options ) ) ) {
+
+					// Don't save these keys as they are handled later
+					if ( in_array( $key, array('whitelist_ip', 'whitelist_urls',  'banlist_ip', 'banlist_hostname', 'banlist_user_agent', 'banlist_referrer', 'hmwp_geoblock_urls') ) ){
+						continue;
+					}
+
 					//Make sure is set in POST
 					if ( HMWP_Classes_Tools::getIsset( $key ) ) {
 						//sanitize the value first
@@ -242,7 +247,7 @@ class HMWP_Models_Settings {
 						//Detect Invalid Names
 						if ( $validate ) {
 							//if there is no the default mode
-							//Don't check the validation for whitlist URLs
+							//Don't check the validation for whitelist URLs
 							if ( isset( $params['hmwp_mode'] ) && $params['hmwp_mode'] <> 'default' ) {
 
 								//check if the name is valid
@@ -375,7 +380,6 @@ class HMWP_Models_Settings {
 		HMWP_Classes_Tools::saveOptions( 'hmwp_text_mapping', wp_json_encode( $hmwp_text_mapping ) );
 
 	}
-
 
 	/**
 	 * Save the URL mapping

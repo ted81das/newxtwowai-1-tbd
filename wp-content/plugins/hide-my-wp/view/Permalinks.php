@@ -212,7 +212,12 @@
                                     }
                                     ?>
                                     <textarea type="text" class="form-control" name="whitelist_ip" style="height: 100px"><?php echo esc_html(!empty($whitelist_ip) ? implode(PHP_EOL, $whitelist_ip) : '') ?></textarea>
-                                    <div class="small text-black-50 col-md-12 py-2 px-0"><?php echo sprintf(esc_html__('You can white-list a single IP address like 192.168.0.1 or a range of 245 IPs like 192.168.0.*. Find your IP with %s', 'hide-my-wp'), '<a href="https://whatismyipaddress.com/" target="_blank">https://whatismyipaddress.com/</a>') ?></div>
+                                    <div class="small text-black-50 col-md-12 pt-2 px-0"><?php echo sprintf(esc_html__('You can white-list a single IP address like 192.168.0.1 or a range of 245 IPs like 192.168.0.*. Find your IP with %s', 'hide-my-wp'), '<a href="https://whatismyipaddress.com/" target="_blank">https://whatismyipaddress.com/</a>') ?></div>
+	                                <?php
+	                                $domain = ( HMWP_Classes_Tools::isMultisites() && defined( 'BLOG_ID_CURRENT_SITE' ) ) ? get_home_url( BLOG_ID_CURRENT_SITE ) : site_url();
+	                                if( $ip = @gethostbyname( wp_parse_url($domain, PHP_URL_HOST) ) ) { ?>
+                                        <div class="small text-black-50 col-md-12 pt-1 px-0"><?php echo sprintf( esc_html__( 'To whitelist your website IP address, add: %s', 'hide-my-wp' ), '<strong>'.$ip.'</strong>' ) ?></div>
+	                                <?php } ?>
                                 </div>
                             </div>
 
@@ -1106,7 +1111,7 @@
                             </div>
                             <div class="col-sm-12 row mb-1 ml-1 p-2">
                                 <div class="checker col-sm-12 row my-2 py-0">
-                                    <div class="col-sm-12 p-0 switch switch-sm switch-red">
+                                    <div class="col-sm-12 p-0 switch switch-sm">
                                         <input type="hidden" name="hmwp_disable_rest_api" value="0"/>
                                         <input type="checkbox" id="hmwp_disable_rest_api" name="hmwp_disable_rest_api" class="switch"<?php echo(HMWP_Classes_Tools::getOption('hmwp_disable_rest_api') ? 'checked="checked"' : '') ?> value="1"/>
                                         <label for="hmwp_disable_rest_api"><?php echo esc_html__('Disable REST API access', 'hide-my-wp'); ?>

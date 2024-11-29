@@ -25,7 +25,7 @@ class HMWP_Controllers_Rewrite extends HMWP_Classes_FrontController {
 		}
 
 		// If doing cron return
-		if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
+		if ( HMWP_Classes_Tools::isCron() ) {
 			return;
 		}
 
@@ -427,7 +427,7 @@ class HMWP_Controllers_Rewrite extends HMWP_Classes_FrontController {
 	public function hookInit() {
 
 		// If the user changes the Permalink to default ... prevent errors
-		if ( HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) && HMWP_Classes_Tools::getValue( 'settings-updated' ) ) {
+		if ( HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) && HMWP_Classes_Tools::getValue( 'settings-updated' ) ) {
 			if ( 'default' <> HMWP_Classes_Tools::getOption( 'hmwp_mode' ) ) {
 				$this->model->flushChanges();
 			}

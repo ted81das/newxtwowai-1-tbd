@@ -182,7 +182,7 @@ class HMWP_Controllers_Templogin extends HMWP_Classes_FrontController {
 		parent::action();
 
 		// If current user can't manage settings
-		if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+		if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 			return;
 		}
 

@@ -760,11 +760,7 @@ class HMWP_Models_Files {
 				$redirect_to = $requested_redirect_to = HMWP_Classes_Tools::getValue( 'redirect_to' );
 
 				if ( ! $redirect_to ) {
-					$redirect_to = add_query_arg( array(
-							'loggedout' => 'true',
-							'wp_lang'   => get_user_locale( $user ),
-						), wp_login_url() );
-
+					$redirect_to = add_query_arg( array( 'loggedout' => 'true', 'wp_lang'   => get_user_locale( $user ), ), wp_login_url() );
 					$requested_redirect_to = '';
 				}
 

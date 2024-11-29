@@ -55,6 +55,27 @@ class HMWP_Models_Compatibility_Wordfence extends HMWP_Models_Compatibility_Abst
 		add_action( 'wf_scan_monitor', array( $this, 'witelistWordfence' ) );
 		add_action( 'wordfence_start_scheduled_scan', array( $this, 'witelistWordfence' ) );
 
+		//Add local IPs in whitelist
+		add_filter( 'hmwp_rules_whitelisted_ips', function ( $ips ) {
+			// Set known logged in cookies
+			$domain = ( HMWP_Classes_Tools::isMultisites() && defined( 'BLOG_ID_CURRENT_SITE' ) ) ? get_home_url( BLOG_ID_CURRENT_SITE ) : site_url();
+			if ( filter_var( $domain, FILTER_VALIDATE_URL ) !== false && strpos( $domain, '.' ) !== false ) {
+				if ( ! HMWP_Classes_Tools::isLocalFlywheel() ) {
+					$ips[] = '127.0.0.1';
+
+					//set local domain IP
+					if( $local_ip = get_transient('hmwp_local_ip') ){
+						$ips[] = $local_ip;
+					}elseif( $local_ip = @gethostbyname( wp_parse_url($domain, PHP_URL_HOST) ) ) {
+						set_transient( 'hmwp_local_ip', $local_ip );
+						$ips[] = $local_ip;
+					}
+
+				}
+			}
+
+			return $ips;
+		});
 	}
 
     /**
@@ -161,7 +182,7 @@ class HMWP_Models_Compatibility_Wordfence extends HMWP_Models_Compatibility_Abst
      * @return void
      */
 	public function witelistWordfence() {
-		set_transient( 'hmwp_disable_hide_urls', 1, 3600 );
+		set_transient( 'hmwp_disable_hide_urls', 1, HOUR_IN_SECONDS );
 	}
 
     /**

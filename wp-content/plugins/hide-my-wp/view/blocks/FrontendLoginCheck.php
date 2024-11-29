@@ -26,6 +26,11 @@
             <div id="hmwp_frontendcheck_content" class="my-3"></div>
             <div id="hmwp_solutions" style="display: none">
                 <div class="my-3 pt-3 border-top border-white text-center">
+	                <?php if ( HMWP_Classes_Tools::isLitespeed() ) { ?>
+                        <div class="mb-2">
+                            <a href="<?php echo esc_url( HMWP_Classes_Tools::getSettingsUrl( 'litespeed-toolbox' ) ) ?>" target="_blank">Make sure you purge
+                                <strong>LiteSpeed cache</strong></a></div>
+	                <?php } ?>
 					<?php if ( HMWP_Classes_Tools::isApache() && ! HMWP_Classes_Tools::isWpengine() ) { ?>
                         <div class="mb-2">
                             <a href="<?php echo esc_url( HMWP_Classes_Tools::getOption( 'hmwp_plugin_website' ) . '/how-to-set-allowoverride-all/' ) ?>" target="_blank">Make sure to activate

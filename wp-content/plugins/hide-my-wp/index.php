@@ -5,7 +5,7 @@
   Plugin URI: https://hidemywp.com
   Author: WPPlugins
   Description: #1 Hack Prevention Security Solution: Hide WP CMS, 7G/8G Firewall, Brute Force Protection, 2FA, GEO Security, Temporary Logins, Alerts & more.
-  Version: 8.0.20
+  Version: 8.0.21
   Author URI: https://hidemywp.com
   Network: true
   Requires at least: 4.6
@@ -16,7 +16,7 @@
 if ( defined( 'ABSPATH' ) && ! defined( 'HMW_VERSION' ) ) {
 
 	//Set current plugin version
-	define( 'HMWP_VERSION', '8.0.20' );
+	define( 'HMWP_VERSION', '8.0.21' );
 
 	//Set the plugin basename
 	define( 'HMWP_BASENAME', plugin_basename( __FILE__ ) );

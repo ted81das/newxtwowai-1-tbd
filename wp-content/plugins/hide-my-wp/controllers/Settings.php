@@ -102,10 +102,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
 		// Setting Alerts based on Logout and Error statements
 		if ( get_transient( 'hmwp_restore' ) == 1 ) {
-			$restoreLink = '<a href="' . add_query_arg( array(
-					'hmwp_nonce' => wp_create_nonce( 'hmwp_restore_settings' ),
-					'action'     => 'hmwp_restore_settings'
-				) ) . '" class="btn btn-default btn-sm ml-3" />' . esc_html__( "Restore Settings", 'hide-my-wp' ) . '</a>';
+			$restoreLink = '<a href="' . esc_url( add_query_arg( array( 'hmwp_nonce' => wp_create_nonce( 'hmwp_restore_settings' ), 'action'     => 'hmwp_restore_settings' ) ) ) . '" class="btn btn-default btn-sm ml-3" />' . esc_html__( "Restore Settings", 'hide-my-wp' ) . '</a>';
 			HMWP_Classes_Error::setNotification( esc_html__( 'Do you want to restore the last saved settings?', 'hide-my-wp' ) . $restoreLink );
 		}
 
@@ -380,7 +377,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 	public function action() {
 		parent::action();
 
-		if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+		if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 			return;
 		}
 
@@ -476,8 +473,6 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 				// Save the settings
 				if ( isset( $_SERVER['REQUEST_METHOD'] ) && $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 
-					$this->model->saveValues( $_POST );
-
 					// Save the whitelist IPs
 					$this->saveWhiteListIps();
 
@@ -492,6 +487,9 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
 					// Save the blacklist GEO Paths
 					$this->saveGeoBlockPaths();
+
+                    // Save the rest of the settings
+					$this->model->saveValues( $_POST );
 
 					// Save CDN URLs
 					if ( $codes = HMWP_Classes_Tools::getValue( 'hmwp_geoblock_countries' ) ) {
@@ -747,7 +745,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 				break;
 			case 'hmwp_backup':
 				//Save the Settings into backup
-				if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+				if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 					return;
 				}
 				HMWP_Classes_Tools::getOptions();
@@ -764,7 +762,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
 			case 'hmwp_preset':
 				//Load a preset data
-				if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+				if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 					return;
 				}
 
@@ -796,7 +794,10 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 					//load the after saving settings process
 					if ( $this->model->applyPermalinksChanged() ) {
 						HMWP_Classes_Error::setNotification( esc_html__( 'Great! The preset was loaded.', 'hide-my-wp' ), 'success' );
-					}
+
+						//add action for later use
+						do_action( 'hmwp_settings_saved' );
+                    }
 				} else {
 					HMWP_Classes_Error::setNotification( esc_html__( 'Error! The preset could not be restored.', 'hide-my-wp' ) );
 				}
@@ -832,7 +833,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 				$wp_filesystem = HMWP_Classes_ObjController::initFilesystem();
 
 				//Restore the backup
-				if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+				if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 					return;
 				}
 
@@ -869,7 +870,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
 			case 'hmwp_download_settings':
 				//Save the Settings into backup
-				if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+				if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 					return;
 				}
 
@@ -899,7 +900,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
 			case 'hmwp_advanced_install':
 
-				if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+				if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 					return;
 				}
 
@@ -938,7 +939,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
             case 'hmwp_pause_enable':
 
-                if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+                if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
                     return;
                 }
 
@@ -948,7 +949,7 @@ class HMWP_Controllers_Settings extends HMWP_Classes_FrontController {
 
             case 'hmwp_pause_disable':
 
-                if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+                if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
                     return;
                 }
 

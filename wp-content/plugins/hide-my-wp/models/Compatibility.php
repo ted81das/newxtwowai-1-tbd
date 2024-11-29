@@ -70,6 +70,7 @@ class HMWP_Models_Compatibility {
 			'mainwp-child/mainwp-child.php'                                                 => 'HMWP_Models_Compatibility_MainWP',
 			'elementor/elementor.php'                                                       => 'HMWP_Models_Compatibility_Elementor',
 			'userswp/userswp.php'                                                           => 'HMWP_Models_Compatibility_UsersWP',
+			'litespeed-cache/litespeed-cache.php'                                           => 'HMWP_Models_Compatibility_LiteSpeed',
 		);
 
 		try {
@@ -736,11 +737,6 @@ class HMWP_Models_Compatibility {
 				}
 			}
 
-			//Show the option to change in cache files
-			if ( HMWP_Classes_Tools::getOption( 'hmwp_mode' ) <> 'default' && ! HMWP_Classes_Tools::getOption( 'test_frontend' ) && HMWP_Classes_Tools::isCachePlugin() && ! HMWP_Classes_Tools::getOption( 'hmwp_change_in_cache' ) && $page == 'hmwp_permalinks' ) {
-				HMWP_Classes_Error::setNotification( sprintf( esc_html__( "To change the paths in the cached files, switch on %s Change Paths in Cached Files%s", 'hide-my-wp' ), '<strong><a href="' . HMWP_Classes_Tools::getOption( 'hmwp_plugin_website' ) . '/kb/activate-security-tweaks/#change_paths_cached_files" target="_blank">', '</a></strong>' ) );
-			}
-
 			if ( HMWP_Classes_Tools::isGodaddy() ) {
 				HMWP_Classes_Error::setNotification( sprintf( esc_html__( "Godaddy detected! To avoid CSS errors, make sure you switch off the CDN from %s", 'hide-my-wp' ), '<strong>' . '<a href="' . HMWP_Classes_Tools::getOption( 'hmwp_plugin_website' ) . '/how-to-use-hide-my-wp-with-godaddy/" target="_blank"> Godaddy > Managed WordPress > Overview</a>' . '</strong>' ) );
 			}
@@ -756,10 +752,7 @@ class HMWP_Models_Compatibility {
 			//Check if the rules are working as expected
 			$mappings = HMWP_Classes_Tools::getOption( 'file_mappings' );
 			if ( ! empty( $mappings ) ) {
-				$restoreLink = '<br /><a href="' . add_query_arg( array(
-						'hmwp_nonce' => wp_create_nonce( 'hmwp_ignore_errors' ),
-						'action'     => 'hmwp_ignore_errors'
-					) ) . '" class="btn btn-default btn-sm mt-3" />' . esc_html__( "Close Error", 'hide-my-wp' ) . '</a>';
+				$restoreLink = '<br /><a href="' . esc_url( add_query_arg( array( 'hmwp_nonce' => wp_create_nonce( 'hmwp_ignore_errors' ), 'action'     => 'hmwp_ignore_errors' ) ) ) . '" class="btn btn-default btn-sm mt-3" />' . esc_html__( "Close Error", 'hide-my-wp' ) . '</a>';
 				HMWP_Classes_Error::setNotification( sprintf( esc_html__( 'Attention! Some URLs passed through the config file rules and were loaded through WordPress rewrite which may slow down your website. %s Please follow this tutorial to fix the issue: %s', 'hide-my-wp' ), '<br /><br />' . join( '<br />', $mappings ) . '<br /><br />', '<a href="' . HMWP_Classes_Tools::getOption( 'hmwp_plugin_website' ) . '/kb/when-the-website-loads-slower-with-hide-my-wp-ghost/" target="_blank" class="text-warning">' . HMWP_Classes_Tools::getOption( 'hmwp_plugin_website' ) . '/kb/when-the-website-loads-slower-with-hide-my-wp-ghost/</a> ' . $restoreLink ), 'text-white bg-danger' );
 			}
 

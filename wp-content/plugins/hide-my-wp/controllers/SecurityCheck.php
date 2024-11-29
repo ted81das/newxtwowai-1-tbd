@@ -558,7 +558,7 @@ class HMWP_Controllers_SecurityCheck extends HMWP_Classes_FrontController {
 	public function action() {
 		parent::action();
 
-		if ( ! HMWP_Classes_Tools::userCan( 'hmwp_manage_settings' ) ) {
+		if ( ! HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
 			return;
 		}
 
@@ -684,7 +684,19 @@ class HMWP_Controllers_SecurityCheck extends HMWP_Classes_FrontController {
                                          </div>
                                        </form>';
 						}
-						wp_send_json_success( join( '<br />', $message ) );
+						if ( HMWP_Classes_Tools::isCachePlugin() && ! HMWP_Classes_Tools::getOption( 'hmwp_change_in_cache' ) ) {
+							$message[] = '<form id="hmwp_fixsettings_form" method="POST">
+                                         ' . wp_nonce_field( 'hmwp_fixsettings', 'hmwp_nonce', false, false ) . '
+                                         <input type="hidden" name="action" value="hmwp_fixsettings"/>
+                                         
+                                         <div class="col-sm-12 p-0 my-2 switch switch-xxs" style="font-size: 0.9rem;">
+                                            <input type="checkbox" id="hmwp_change_in_cache" name="hmwp_change_in_cache" onChange="jQuery(this).hmwp_fixSettings(\'hmwp_change_in_cache\',1);" class="switch" ' . ( HMWP_Classes_Tools::getOption( 'hmwp_change_in_cache' ) ? 'checked="checked"' : '' ) . ' value="1"/>
+                                            <label for="hmwp_change_in_cache">' . sprintf( esc_html__( "You can now turn on '%s' option.", 'hide-my-wp' ), __( 'Change Paths in Cached Files', 'hide-my-wp' ) ) . '</label>
+                                         </div>
+                                       </form>';
+						}
+
+						wp_send_json_success( join( '', $message ) );
 					} else {
 						wp_send_json_error( esc_html__( 'Error! The new paths are not loading correctly. Clear all cache and try again.', 'hide-my-wp' ) . "<br /><br />" . join( '<br />', $error ) );
 					}

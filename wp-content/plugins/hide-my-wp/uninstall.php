@@ -19,6 +19,9 @@ if ( HMWP_Classes_Tools::getOption( 'hmwp_templogin_delete_uninstal' ) ) {
 	HMWP_Classes_ObjController::getClass( 'HMWP_Models_Templogin' )->deleteTempLogins();
 }
 
+//remove user capability
+HMWP_Classes_ObjController::getClass( 'HMWP_Models_RoleManager' )->removeHMWPCaps();
+
 // Delete the record from database
 delete_option( HMWP_OPTION );
 delete_option( HMWP_OPTION_SAFE );

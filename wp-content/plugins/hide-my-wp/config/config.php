@@ -43,3 +43,5 @@ define( 'HMWP_SECURITY_CHECK_IGNORE', 'hmwp_securitycheck_ignore' );
 define( 'HMWP_SECURITY_CHECK_TIME', 'hmwp_securitycheck_time' );
 define( 'HMWP_SALT_CHANGED', 'hmwp_saltchange_time' );
 define( 'HMWP_CRON', 'hmwp_cron_process' );
+// User capability
+define( 'HMWP_CAPABILITY', 'hmwp_manage_settings' );

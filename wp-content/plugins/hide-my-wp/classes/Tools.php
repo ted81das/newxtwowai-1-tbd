@@ -717,13 +717,14 @@ class HMWP_Classes_Tools {
 	 * @return array
 	 */
 	public function hookActionlink( $links ) {
-		if ( get_transient( 'hmwp_disable' ) ) {
-			$links[] = '<a href="' . esc_url(add_query_arg( array( 'hmwp_nonce' => wp_create_nonce( 'hmwp_pause_disable' ), 'action' => 'hmwp_pause_disable' ) ) ). '" class="btn btn-default btn-sm mt-3" />' . esc_html__( "Resume Security", 'hide-my-wp' ) . '</a>';
-		} else {
-			$links[] = '<a href="' . esc_url(add_query_arg( array( 'hmwp_nonce' => wp_create_nonce( 'hmwp_pause_enable' ), 'action' => 'hmwp_pause_enable' ) )) . '" class="btn btn-default btn-sm mt-3" />' . esc_html__( "Pause for 5 minutes", 'hide-my-wp' ) . '</a>';
+		if ( HMWP_Classes_Tools::userCan( HMWP_CAPABILITY ) ) {
+			if ( get_transient( 'hmwp_disable' ) ) {
+				$links[] = '<a href="' . esc_url(add_query_arg( array( 'hmwp_nonce' => wp_create_nonce( 'hmwp_pause_disable' ), 'action' => 'hmwp_pause_disable' ) ) ). '" class="btn btn-default btn-sm mt-3" />' . esc_html__( "Resume Security", 'hide-my-wp' ) . '</a>';
+			} else {
+				$links[] = '<a href="' . esc_url(add_query_arg( array( 'hmwp_nonce' => wp_create_nonce( 'hmwp_pause_enable' ), 'action' => 'hmwp_pause_enable' ) )) . '" class="btn btn-default btn-sm mt-3" />' . esc_html__( "Pause for 5 minutes", 'hide-my-wp' ) . '</a>';
+			}
+			$links[] = '<a href="' . esc_url(self::getSettingsUrl()) . '">' . esc_html__( 'Settings', 'hide-my-wp' ) . '</a>';
 		}
-		$links[] = '<a href="' . esc_url(self::getSettingsUrl()) . '">' . esc_html__( 'Settings', 'hide-my-wp' ) . '</a>';
-
 		return array_reverse( $links );
 	}
 
@@ -869,11 +870,7 @@ class HMWP_Classes_Tools {
 			return false;
 		}
 
-		if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
-			return false;
-		}
-
-		if ( HMWP_Classes_Tools::isAjax() || HMWP_Classes_Tools::isApi() ) {
+		if ( HMWP_Classes_Tools::isAjax() || HMWP_Classes_Tools::isApi() || HMWP_Classes_Tools::isCron() ) {
 			return false;
 		}
 
@@ -901,7 +898,7 @@ class HMWP_Classes_Tools {
 			return false;
 		}
 
-		if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
+		if ( HMWP_Classes_Tools::isCron() ) {
 			return false;
 		}
 
@@ -940,7 +937,7 @@ class HMWP_Classes_Tools {
 			return false;
 		}
 
-		if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
+		if ( HMWP_Classes_Tools::isCron() ) {
 			return false;
 		}
 
@@ -1855,9 +1852,6 @@ class HMWP_Classes_Tools {
 				\JchOptimize\Platform\Cache::deleteCache();
 			}
 
-			if ( class_exists( 'LiteSpeed_Cache_API' ) && method_exists( 'LiteSpeed_Cache_API', 'purge_all' ) ) {
-				\LiteSpeed_Cache_API::purge_all();
-			}
 			//////////////////////////////////////////////////////////////////////////////
 			if ( function_exists( 'w3tc_pgcache_flush' ) ) {
 				w3tc_pgcache_flush();
@@ -1898,9 +1892,9 @@ class HMWP_Classes_Tools {
 			}
 			//////////////////////////////////////////////////////////////////////////////
 
-			if ( class_exists( 'LiteSpeed_Cache' ) ) {
+			if ( class_exists( 'LiteSpeed\Purge' ) ) {
 				header("X-LiteSpeed-Purge: *");
-				LiteSpeed_Cache::get_instance()->purge_all();
+				LiteSpeed\Purge::purge_all();
 			}
 			//////////////////////////////////////////////////////////////////////////////
 
@@ -1984,9 +1978,6 @@ class HMWP_Classes_Tools {
 			//set the default params from tools
 			self::saveOptions( $key, $value );
 		}
-
-		//remove user capability
-		HMWP_Classes_ObjController::getClass( 'HMWP_Models_RoleManager' )->removeHMWPCaps();
 
 		//remove the custom rules
 		HMWP_Classes_ObjController::getClass( 'HMWP_Models_Rules' )->writeToFile( '', 'HMWP_VULNERABILITY' );
@@ -2284,33 +2275,16 @@ class HMWP_Classes_Tools {
 	/**
 	 * Check the user capability for the roles attached
 	 *
-	 * @param  $cap
+	 * @param  string  $capability  User capability
 	 *
 	 * @return bool
 	 */
-	public static function userCan( $cap ) {
+	public static function userCan( $capability ) {
 
 		if ( function_exists( 'current_user_can' ) ) {
 
-			if ( current_user_can( $cap ) ) {
+			if ( current_user_can( $capability ) ) {
 				return true;
-			}
-
-			//Get the current user roles
-			$user = wp_get_current_user();
-
-			//If the user has multiple roles
-			if ( isset( $user->roles ) && is_array( $user->roles ) && count( $user->roles ) > 1 ) {
-				foreach ( $user->roles as $role ) {
-
-					//Get the role
-					$role_object = get_role( $role );
-
-					//Check if it has capability
-					if ( $role_object->has_cap( $cap ) ) {
-						return true;
-					}
-				}
 			}
 
 		}
@@ -2510,6 +2484,16 @@ class HMWP_Classes_Tools {
 		if ( filter_var( $domain, FILTER_VALIDATE_URL ) !== false && strpos( $domain, '.' ) !== false ) {
 			if ( ! self::isLocalFlywheel() ) {
 				$wl_jetpack[] = '127.0.0.1';
+
+				//set local domain IP
+				if ( HMWP_Classes_Tools::getOption( 'hmwp_disable_rest_api' ) ) {
+					if( $local_ip = get_transient('hmwp_local_ip') ){
+						$wl_jetpack[] = $local_ip;
+					}elseif( $local_ip = @gethostbyname( wp_parse_url($domain, PHP_URL_HOST) ) ) {
+						set_transient( 'hmwp_local_ip', $local_ip );
+						$wl_jetpack[] = $local_ip;
+					}
+				}
 			}
 		}
 
