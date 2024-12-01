@@ -1,0 +1,9 @@
+v1.1.0 - 3 Jun, 2023
+- New: Action to Create a Sub Folder
+- New: Action to Share Folder
+- New: Action to Share Folder with Anyone
+- New: Action to Share File
+- New: Action to Share File with Anyone
+
+v1.0 - 1 March, 2022
+- Initial release

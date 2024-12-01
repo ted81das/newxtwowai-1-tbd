@@ -1,0 +1,48 @@
+v2.0.2 - 6 August, 2024
+- Fix: Webhook cron renewal causing issue if the cron job is not working fine in WordPress
+- Fix: Set default authentication type for the new Connect vs traditional method in workflow
+- Fix: Actions not working if the Spreadsheet or the worksheet has Emoji or special characters in name
+
+v2.0.1 - 26 Jun, 2024
+# Fix
+- Update Cell data action causing conflict if the data has comma separated content
+
+v2.0 - 12 June, 2024
+# New 
+- Implemented FlowMattic Connect to use centralized connections
+- Trigger: New Spreadsheet Row
+- Trigger: New Or Updated Spreadsheet Row
+- Trigger: Deleted Spreadsheet Row
+- Trigger: Update Cell Data
+- Trigger: Update Specific Cell Data
+- Trigger: Update Specific Column Value
+- Action: Get Row Count
+- Action: Create Spreadsheet Column
+- Action: Create New Sheet
+- Action: Import CSV or JSON to Existing Sheet
+- Action: Get Row Data
+- Action: Copy Sheet
+
+# Improvements 
+- All the existing actions are improved to work fine with existing setup and new setup 
+
+# Fixes
+- New row action insert from 3rd row 
+- Sheet data was not available above 10,000 rows 
+- Sometimes the cell update was happening on cell A due to provided range is incorrect
+- Add row action does not allow to have empty column fields 
+- Add row action causing error if the sheet name has special characters or quotes 
+
+v1.1.1 - 19 Jan. 2023
+- Fix: Escape single and double quotes correctly when add or update data to Google sheet
+
+v1.1.0 - 15 Nov. 2022
+- New action - Update Row
+- New action - Delete Row
+- New action - Clear Row Data
+- New action - Lookup Row Data
+- New action - Get Cell Data
+- New action - Update Cell Data
+
+v1.0
+- Initial release

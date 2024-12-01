@@ -1,0 +1,6 @@
+v2.0 - 15 Feb. 2024
+- New trigger: New Database Item
+- New trigger: Updated Database Item
+
+v1.0
+- Initial release

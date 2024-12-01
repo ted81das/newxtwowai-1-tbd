@@ -59,6 +59,32 @@ return array (
       'load_as_file' => '',
       'file_name' => '2-limit-general-options.php',
     ),
+    '3-restrict-specific-admin-pages.php' => 
+    array (
+      'name' => 'Restrict specific admin pages',
+      'description' => '',
+      'type' => 'PHP',
+      'status' => 'published',
+      'tags' => '',
+      'created_at' => '',
+      'updated_at' => '2024-12-01 10:18:26',
+      'run_at' => 'all',
+      'priority' => 10,
+      'group' => '',
+      'condition' => 
+      array (
+        'status' => 'no',
+        'run_if' => 'assertive',
+        'items' => 
+        array (
+          0 => 
+          array (
+          ),
+        ),
+      ),
+      'load_as_file' => '',
+      'file_name' => '3-restrict-specific-admin-pages.php',
+    ),
   ),
   'draft' => 
   array (
@@ -69,13 +95,14 @@ return array (
     array (
       0 => '1-addtemplatekitforotherroles.php',
       1 => '2-limit-general-options.php',
+      2 => '3-restrict-specific-admin-pages.php',
     ),
   ),
   'meta' => 
   array (
     'secret_key' => '31dfb34a782408c52539b9806aa8246f',
     'force_disabled' => 'no',
-    'cached_at' => '2024-12-01 09:32:40',
+    'cached_at' => '2024-12-01 10:18:26',
     'cached_version' => '10.34',
     'cashed_domain' => 'https://nextwowtry2.test',
     'legacy_status' => 'new',

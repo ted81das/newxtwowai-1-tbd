@@ -1,0 +1,6 @@
+v1.1.0 - 7 Oct. 2024
+- Improved: Added new AI Models
+- Fix: Compatibility with the latest API 
+
+v1.0 - 17 Oct. 2023
+- Initial release

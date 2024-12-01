@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: FlowMattic
+ * Plugin Name: aiFlowmattic
  * Plugin URI: https://flowmattic.com/
- * Description: Workflow automation plugin for WordPress.
- * Version: 4.3.4.2
+ * Description: Workflow automation plugin for Wowmattic.
+ * Version: 1.3.4.2
  * Requires at least: 5.0
  * Requires PHP:      7.2
  * Author: InfiWebs
